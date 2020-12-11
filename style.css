@@ -1,0 +1,103 @@
+img {
+  width: 130px;
+}
+
+body {
+  margin: 0;
+background-image: linear-gradient(to right bottom, #9b9b9b, #7c7c7c, #5e5e5e, #424242, #282828, #302830, #3e262f, #4b2425, #803d2f, #b05f2f, #d68a23, #eebc00);  /* background: black; */
+}
+
+.outer-wrapper {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.content {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  /* background: #aaa; */
+  background-color: rgba(0, 0, 0, 0.116);
+  backdrop-filter: blur(5px);
+  border-radius: 40px;
+  padding: 20px;
+  color: white;
+  min-width: 400px;
+  max-width: 78vw;
+  min-height: 80vh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 2px 2px 4px #000;
+  white-space: nowrap;
+}
+
+#about {
+  white-space: normal;
+}
+
+#nav-bar {
+  background-color: rgba(0, 0, 0, 0.377);
+  backdrop-filter: blur(5px);
+  position: -webkit-fixed;
+  position: fixed;
+  height: 60vh;
+  width: 4vw;
+  top: 60px;
+  z-index: 5;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px #000;
+
+}
+
+#nav-bar a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin-left: 12px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  font-size: 15px;
+}
+
+#about {
+    margin-left: 100px;
+}
+
+#about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline-box {
+  display: inline-block;
+}
