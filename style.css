@@ -4,7 +4,8 @@ img {
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right bottom, #6d6d6d, #585858, #444444, #303030, #1e1e1e, #241e23, #2e1c22, #361b1a, #582d1d, #724517, #816409, #818700);
+  /* background-image: linear-gradient(to right bottom, #6d6d6d, #585858, #444444, #303030, #1e1e1e, #241e23, #2e1c22, #361b1a, #582d1d, #724517, #816409, #818700); */
+  background-image: url('image/background.jpg');
 }
 
 .outer-wrapper {
@@ -57,6 +58,7 @@ body {
 
 .gradient-text {
   background: linear-gradient(to right bottom, #ffffff, #fc6d1a, #f79f23, #eebc00);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
