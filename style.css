@@ -1,3 +1,11 @@
+/* Headings font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+/* Content fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Gentium+Basic&display=swap');
+
+
 :root {
   --primary: #000000;
   --secondary: #ff1e56;
@@ -14,6 +22,12 @@ body {
   /* background-image: linear-gradient(to right bottom, #6d6d6d, #585858, #444444, #303030, #1e1e1e, #241e23, #2e1c22, #361b1a, #582d1d, #724517, #816409, #818700); */
   /* background-image: url('image/background.jpg'); */
   background-color: var(--primary);
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Gentium Basic', serif;
+}
+
+h1 {
+  font-family: 'Josefin Sans', serif;
 }
 
 .outer-wrapper {
@@ -28,7 +42,7 @@ body {
 .content {
   display: inline-block;
   margin: 10px;
-  /* padding: 10px;23yj */
+  /* padding: 10px; */
   /* background: #aaa; */
   background-color: rgba(0, 0, 0, 0.507);
   backdrop-filter: blur(5px);
@@ -129,7 +143,7 @@ body {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to left, var(--secondary), var(--color1) );
+  backgrou1ond: linear-gradient(to left, var(--secondary), var(--color1) );
 }
 
 #about {
