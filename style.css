@@ -1,10 +1,13 @@
 /* Headings font */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 /* Content fonts */
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Gentium+Basic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Gentium+Basic&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --primary: #000000;
@@ -22,12 +25,21 @@ body {
   /* background-image: linear-gradient(to right bottom, #6d6d6d, #585858, #444444, #303030, #1e1e1e, #241e23, #2e1c22, #361b1a, #582d1d, #724517, #816409, #818700); */
   /* background-image: url('image/background.jpg'); */
   background-color: var(--primary);
-  font-family: 'Cormorant Garamond', serif;
-  font-family: 'Gentium Basic', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Gentium Basic", serif;
+  cursor: url("image/orange-cursor.png"), url("image/orange-cursor.png"),
+    pointer;
 }
 
 h1 {
-  font-family: 'Josefin Sans', serif;
+  font-family: "Josefin Sans", serif;
+}
+
+.gradient-text {
+  background: linear-gradient(to right bottom, var(--secondary), var(--color1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .outer-wrapper {
@@ -40,31 +52,24 @@ h1 {
   white-space: nowrap;
 }
 .content {
+  height: -webkit-fill-available;
   display: inline-block;
-  margin: 10px;
+  /* margin: 10px; */
   /* padding: 10px; */
   /* background: #aaa; */
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.644);
   backdrop-filter: blur(5px);
-  border-radius: 15px;
+  /* border-radius: 15px; */
   /* padding: 20px; */
   color: var(--color1);
-  min-width: 400px;
-  max-width: 78vw;
+  min-width: 100vw;
   min-height: 92vh;
-  height: auto;
+  /* height: auto; */
   overflow-x: hidden;
   overflow-y: auto;
-  border: 2px solid var(--secondary);
+  /* border: 2px solid var(--secondary); */
   box-shadow: 2px 2px 4px #000;
   white-space: nowrap;
-}
-
-.gradient-text {
-  background: linear-gradient(to right bottom, var(--secondary), var(--color1) );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .navbar-container {
@@ -79,8 +84,12 @@ h1 {
   align-items: center;
   align-content: center;
   z-index: 5;
+  margin-left: -50px;
+  transition: all 0.3s ease-in-out;
 }
-
+.navbar-container:hover {
+  margin-left: 0px;
+}
 #nav-bar {
   background-color: rgb(0, 0, 0);
   /* backdrop-filter: blur(25px); */
@@ -96,13 +105,16 @@ h1 {
   /* color: white; */
   display: block;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   padding: 7px;
   padding-top: 15px;
+  transition: font-size 0.3s;
 }
 
 #nav-bar a:hover {
-  font-size: 30px;
+  /* font-size: 25px; */
+  cursor: url("image/orange-cursor.png"), url("image/orange-cursor.png"),
+    pointer;
 }
 
 .tooltip {
@@ -138,34 +150,160 @@ h1 {
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, var(--secondary), var(--color1) );
+  background: linear-gradient(to right, var(--secondary), var(--color1));
   /* background-color: var(--secondary); */
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  backgrou1ond: linear-gradient(to left, var(--secondary), var(--color1) );
+  background: linear-gradient(to left, var(--secondary), var(--color1));
 }
 
 #about {
-  height: 88vh;
-  margin-left: 100px;
- background: url('/image/sk6-3.jpg');
- background-attachment: fixed;
- background-position: right;
- background-size: cover;
- white-space: normal;
- overflow: hidden;
+  height: 100%;
+  width: 100vw;
+  /* padding-left: 60px; */
+  background: url("/image/sk5-2.jpg");
+  background-attachment: fixed;
+  /* background-position: right; */
+  background-size: cover;
+  white-space: normal;
+  /* overflow: hidden; */
 }
 
 #about-box {
-  height: 100%;
+  height: 60vh;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-left: 60%;
-  background: rgba(0, 0, 0, 0.507);
-  backdrop-filter: blur(3px);
-  padding: 20px;
+  /* text-align: center; */
+  /* margin-left: 60%; */
+  background: rgba(0, 0, 0, 0.807);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  /* padding: 20px; */
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transition: 0.4s ease-in-out;
+}
+/* 
+#about-box:hover {
+  box-shadow: 10px 10px 15px 5px rgba(1, 1, 1, 100);
+  transform: rotate(-5deg);
+} */
+#about-box h1 {
+  font-size: 2vw;
+  line-height: 1;
+}
+#about-box h1 span {
+  font-size: 7vw;
+  /* color: var(--secondary); */
+}
+#skills {
+  /* margin-left: 100px; */
+  background: url("/image/sk6-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  overflow: hidden;
+}
+#skills-container {
+  margin: 5%;
+  height: 80%;
+  /* border: 1px solid var(--secondary); */
+  background-color: rgba(0, 0, 0, 0.807);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.skills-content {
+  width: 50%;
+  height: 100%;
+  line-height: 1.5;
+  white-space: normal;
+  max-height: 85%;
+  padding: 5% 0 5% 5%;
+  font-size: 20px;
+}
+.skills-content h1 {
+  font-size: 40px;
+}
+.skills-list {
+  width: 60%;
+  height: 90%;
+  overflow-y: auto;
+}
+.skills-list::-webkit-scrollbar {
+  display: none;
+}
+.skills-list ul {
+  padding: 0;
+}
+.skills-list ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-list ul li p {
+  width: 20%;
+  font-weight: bold;
+}
+.skills-list ul li .indicator {
+  width: 40%;
+}
+.skills-list ul li span {
+  width: 10%;
+  padding-left: 10px;
+}
+.indicator {
+  width: 60%;
+  height: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.253);
+}
+.level {
+  height: 100%;
+  background: linear-gradient(to right, var(--secondary), var(--color1));
+  border-radius: 15px;
+}
+.l100 {
+  width: 100%;
+}
+.l95 {
+  width: 95%;
+}
+.l90 {
+  width: 90%;
+}
+.l85 {
+  width: 85%;
+}
+.l80 {
+  width: 80%;
+}
+.l75 {
+  width: 75%;
+}
+.l70 {
+  width: 70%;
+}
+.l60 {
+  width: 60%;
+}
+.l50 {
+  width: 50%;
+}
+.l40 {
+  width: 40%;
+}
+#shield-bg {
+  background: url("/image/shield-bw.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
+  min-width: 80vw;
 }
