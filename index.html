@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sk Portfolio</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="/style.css">
-  
-</head>
+    <link rel="stylesheet" href="/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
 
-<body >
-
+  <body>
     <div id="indicator"></div>
+
     <main class="outer-wrapper">
-        <section class="navbar-container">
-            <nav id="nav-bar">
-                <!-- <div class="tooltip">Hover
+       
+      <div id="invertedcursor"></div>
+      <section class="navbar-container">
+        <nav id="nav-bar">
+          <!-- <div class="tooltip">Hover
                     <span class="tooltiptext">Tooltip </span>
                 </div> -->
-                <!-- <a class="tooltip " href=""><i class="fas fa-home gradient-text"></i><span class="tooltiptext">Home </span></a> -->
-                <a class="tooltip " href="#about"><i class="fas fa-address-card  gradient-text"></i><span class="tooltiptext">About </span></a>
-                <a class="tooltip " href="#skills"><i class="fas fa-laptop-code gradient-text"></i><span class="tooltiptext">Skills </span></a>
-                <a class="tooltip " href="#education"><i class="fas fa-book-open gradient-text"></i><span class="tooltiptext">Education </span></a>
-                <a class="tooltip " href="#portfolio"><i class="fab fa-studiovinari gradient-text"></i><span class="tooltiptext">Portfolio </span></a>
-                <a class="tooltip " href="#contact"><i class="fas fa-comments gradient-text"></i><span class="tooltiptext">Contact </span></a>
-            </nav>
-        </section>
-        <!-- <section class="content">
+          <!-- <a class="tooltip " href=""><i class="fas fa-home gradient-text"></i><span class="tooltiptext">Home </span></a> -->
+          <a class="tooltip hoverable" href="#about"
+            ><i class="fas fa-address-card gradient-text"></i
+            ><span class="tooltiptext">About </span></a
+          >
+          <a class="tooltip hoverable" href="#skills"
+            ><i class="fas fa-laptop-code gradient-text"></i
+            ><span class="tooltiptext">Skills </span></a
+          >
+          <a class="tooltip hoverable" href="#education"
+            ><i class="fas fa-book-open gradient-text"></i
+            ><span class="tooltiptext">Education </span></a
+          >
+          <a class="tooltip hoverable" href="#portfolio"
+            ><i class="fab fa-studiovinari gradient-text"></i
+            ><span class="tooltiptext">Portfolio </span></a
+          >
+          <a class="tooltip hoverable" href="#contact"
+            ><i class="fas fa-comments gradient-text"></i
+            ><span class="tooltiptext">Contact </span></a
+          >
+        </nav>
+      </section>
+      <!-- <section class="content">
             
         </section> -->
-     
-        <section class="content" id="about">
+
+      <section class="content" id="about">
+        <div id="about-box" class="wow fadeInUp revealOnScroll" data-wow-delay=".5s">
             
-            <div id="about-box">
-                <div>
-                    <!-- <img width="100px" id="mypic" src="image/sk.jpg"> -->
-                </div>
-                <!-- <h1> <i class="fas fa-address-card"></i> About Me</h1>
+          <div>
+            <!-- <img width="100px" id="mypic" src="image/sk.jpg"> -->
+          </div>
+          <!-- <h1> <i class="fas fa-address-card"></i> About Me</h1>
                 <p>Sanjeev kumar J V is a computer science <b>engineering student</b>. <br>
                     He is a self-motivated and enthusiastic person. <br>
                     He is skilled in <b>coding </b> and <b>web-devlopment</b>.
@@ -48,271 +70,414 @@
                     He has <b>excellent communication skills</b> and the ability to succinctly present ideas.
                     And also he is able to work well in an integrated collaborative <b>team environment</b>, including frequent interaction with team members and supervisors.
                 </p> -->
-                <h1>
-                    Hey, I'm <br>
-                    <span class="gradient-text">Sanjeev <br>Kumar</span>
-                    <p>A passionated web developer</p>
-                </h1>
-                <!-- <div class="know-more">Know More</div> -->
+          <h1>
+            Hey, I'm <br />
+            <span class="gradient-text">Sanjeev <br />Kumar</span>
+            <p>A passionate web developer</p>
+            <a class="hoverable"  href="#skills"><button>My Skills</button></a>
+          </h1>
+          <!-- <div class="know-more">Know More</div> -->
+        </div>
+      </section>
+      <section class="content" id="skills">
+        <div id="skills-container">
+          <!-- <h1> <i class="fas fa-laptop-code"></i></i> Skills</h1> -->
+          <div class="skills-content wow bounceInUp revealOnScroll" data-wow-delay=".5s">
+            <h1 class="gradient-text">What am I good at?</h1>
+            <p>
+              I started to code since I was 16. <br />
+              As usual, it was very hard for this little kid. <br />
+              When I executed my very first "Hello World" program in c, <br />
+              I felt so happy. <br />
+              Got excited to explore more things in this coding world. <br />
+              <br />
+              Now I'm here!
+            </p>
+          </div>
+          <div class="skills-list">
+            <ul>
+              <li>
+                <p>HTML and CSS</p>
+                <div class="indicator">
+                  <div class="level l100"></div>
+                </div>
+                <!-- <span>100%</span> -->
+              </li>
+              <li>
+                <p>JavaScript</p>
+                <div class="indicator">
+                  <div class="level l95"></div>
+                </div>
+                <!-- <span>95%</span> -->
+              </li>
+              <li>
+                <p>NodeJS</p>
+                <div class="indicator">
+                  <div class="level l90"></div>
+                </div>
+                <!-- <span>90%</span> -->
+              </li>
+              <li>
+                <p>React</p>
+                <div class="indicator">
+                  <div class="level l85"></div>
+                </div>
+                <!-- <span>85%</span> -->
+              </li>
+              <li>
+                <p>C / C++</p>
+                <div class="indicator">
+                  <div class="level l90"></div>
+                </div>
+                <!-- <span>90%</span> -->
+              </li>
+              <li>
+                <p>Python</p>
+                <div class="indicator">
+                  <div class="level l85"></div>
+                </div>
+                <!-- <span>85%</span> -->
+              </li>
+              <li>
+                <p>Java</p>
+                <div class="indicator">
+                  <div class="level l70"></div>
+                </div>
+                <!-- <span>70%</span> -->
+              </li>
+              <li>
+                <p>MongoDB</p>
+                <div class="indicator">
+                  <div class="level l80"></div>
+                </div>
+                <!-- <span>80%</span> -->
+              </li>
+              <li>
+                <p>MySQL</p>
+                <div class="indicator">
+                  <div class="level l60"></div>
+                </div>
+                <!-- <span>60%</span> -->
+              </li>
+              <li>
+                <p>FireBase</p>
+                <div class="indicator">
+                  <div class="level l60"></div>
+                </div>
+                <!-- <span>60%</span> -->
+              </li>
+            </ul>
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="content" id="education">
+
+        <section class="ps-timeline-sec">
+          <h1 class="gradient-text">Academics</h1>
+          <div class="container">
+           
+              <ol class="ps-timeline">
+                <li>
+                <div class="education-box img-handler-top hoverable float-shadow">
+                  <h2 class="">Grade 10</h2>
+                  <p class="full-details">Jul 2015 - Apr 2016</p>
+                  <p class="full-details">
+                    Sri Subramania Bharathi HSC
+                  </p>
+                  <p class="full-details">score : 96.8 %</p>
+                  <br>
+                  <!-- <p class="education-description text-justify">
+                    A basement for my career is built here...
+                  </p> -->
+
+                  <!-- <img src="/image/sk.jpg" alt="" /> -->
+                </div>
+                <div class="ps-bot"></div>
+                <span class="ps-sp-top"></span>
+              </li>
+              <li>
+                <div class="education-box img-handler-bot hoverable float-shadow">
+                  <h2 class="">Grade 12</h2>
+                  <p class="education-duration">Jul 2017 - Mar 2018</p>
+                  <p class="full-details">
+                    Sri Sundareswara Vidya Sala HSC
+                  </p>
+                  <p class="full-details">score : 91.5 %</p>
+                  <br>
+                  <!-- <p class="education-description text-justify">
+                    Completed my schooling and armed to play the game...
+                  </p> -->
+                  <!-- <img src="/image/sk.jpg" alt="" /> -->
+                </div>
+                <!-- <div class="ps-top">
+                </div> -->
+                <span class="ps-sp-bot"></span>
+              </li>
+              <li>
+                <div class="education-box img-handler-top hoverable float-shadow">
+                  <h2 class="">B.E - CSE</h2>
+                  <p class="education-duration">Aug 2018 - Mar 2022</p>
+                  <p class="full-details">Mepco Schlenk Engineering College</p>
+                  <p class="full-details">CGPA : 8.95</p>
+                    <br>
+                  <!-- <p class="education-description text-justify">
+                    Playing the game and learning to become a master...
+                  </p> -->
+
+                  <!-- <img src="/image/sk.jpg" alt="" /> -->
+                </div>
+                <div class="ps-bot"></div>
+                <span class="ps-sp-top"></span>
+              </li>
+              <li>
+                <!-- <div class="img-handler-bot">
+                  <img src="/image/sk.jpg" alt="" />
+                </div>
+                <div class="ps-top">
+                  <p>
+                    I started to code since I was 16. <br />
+                    As usual, it was very hard for this little kid. <br />
+                    When I executed my very first "Hello World" program in c,
+                    <br />
+                    I felt so happy. <br />
+                  </p>
+                </div>
+                <span class="ps-sp-bot"></span> -->
+              </li>
+            </ol>
+          </div>
+        </section>
+      </section>
+      <section class="content" id="shield-bg"></section>
+      <section class="content" id="portfolio">
+        <h1><i class="fab fa-studiovinari"></i> Portfolio</h1>
+        <div class="portfolio-container">
+          <div class="portfolio-image-container">
+            <img src="image/calc-image.PNG" />
+            <div class="portfolio-description">
+              <p>An interactive calculator with adjustable themes.</p>
             </div>
-        </section>
-        <section class="content" id="skills">
-            <div id="skills-container">
-                <!-- <h1> <i class="fas fa-laptop-code"></i></i> Skills</h1> -->
-                <div class="skills-content">
-                    <h1 class="gradient-text">
-                        What am I good at?
-                    </h1>
-                    <p>
-                        I started to code since I was 16. <br>
-                        As usual, it was very hard for this little kid. <br>
-                        When I executed my very first "Hello World" program in c, <br>
-                        I felt so happy. <br>
-                        Got excited to explore more things in this coding world. <br>
-                        <br>
-                        Now I'm here!
-                    </p>
-                </div>
-                <div class="skills-list">
-                    <ul>
-                        <li>
-                            <p>HTML and CSS</p>
-                            <div class="indicator">
-                                <div class="level l100"></div>
-                            </div>
-                            <span>100%</span>
-                        </li>
-                        <li>
-                            <p>JavaScript</p>
-                            <div class="indicator">
-                                <div class="level l95"></div>
-                            </div>
-                            <span>95%</span>
-                        </li>
-                        <li>
-                            <p>NodeJS</p>
-                            <div class="indicator">
-                                <div class="level l90"></div>
-                            </div>
-                            <span>90%</span>
-                        </li>
-                        <li>
-                            <p>React</p>
-                            <div class="indicator">
-                                <div class="level l85"></div>
-                            </div>
-                            <span>85%</span>
-                        </li>
-                        <li>
-                            <p>C / C++</p>
-                            <div class="indicator">
-                                <div class="level l90"></div>
-                            </div>
-                            <span>90%</span>
-                        </li>
-                        <li>
-                            <p>Python</p>
-                            <div class="indicator">
-                                <div class="level l85"></div>
-                            </div>
-                            <span>85%</span>
-                        </li>
-                        <li>
-                            <p>Java</p>
-                            <div class="indicator">
-                                <div class="level l70"></div>
-                            </div>
-                            <span>70%</span>
-                        </li>
-                        <li>
-                            <p>MongoDB</p>
-                            <div class="indicator">
-                                <div class="level l80"></div>
-                            </div>
-                            <span>80%</span>
-                        </li>
-                        <li>
-                            <p>MySQL</p>
-                            <div class="indicator">
-                                <div class="level l60"></div>
-                            </div>
-                            <span>60%</span>
-                        </li>
-                        <li>
-                            <p>FireBase</p>
-                            <div class="indicator">
-                                <div class="level l60"></div>
-                            </div>
-                            <span>60%</span>
-                        </li>
-                    </ul>
-                    <div class="skill-progress">
-                        
-                    </div>
-                    
-                </div>
+          </div>
+
+          <div class="portfolio-image-container">
+            <img src="image/flames-image.PNG" />
+            <div class="portfolio-description">
+              <p>
+                Web page that finds the flames relationship for you and your
+                partner.
+              </p>
             </div>
-        </section>
-        <section class="content" id="education">
-            <h1> <i class="fas fa-book-open"></i> Education</h1>
-            <!-- <p>Skilled with programming knowledges such as python, c++, c</p> -->
-            <div class="timeline">
-                <div class="timeline-box left ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="">
-                        </div>
-                        <h3 class="education-qual">SSLC</h3>
-                        <h4 class="institution-name">Sri Subramania Bharathi Higher sec school</h4>
-                        <h5 class="education-duration">Jul 2015 - Apr 2016</h5>
+          </div>
 
-                        <p class="education-description text-justify">A basement for my career is built here...  </p>
-                        <p class="education-description text-left">score : 96.8 % </p>
-                    </div>
-                </div>
-                <div class="timeline-box right ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="">
-                        </div>
-                        <h3 class="education-qual">HSC</h3>
-                        <h4 class="institution-name"> Sri Sundareswara Vidya Sala Higher sec school</h4>
-                        <h5 class="education-duration">Jul 2017 - Mar 2018</h5>
-
-                        <p class="education-description text-justify"> Completed my schooling and armed to play the game... </p>
-                        <p class="education-description text-left">score : 91.5 % </p>
-                    </div>
-                </div>
-                <div class="timeline-box left ">
-                    <div class="timeline-container">
-                        <div class="timeline-logo">
-                            <img src="">
-                        </div>
-                        <h3 class="education-qual">BE Computer Science</h3>
-                        <h4 class="institution-name">Mepco Schlenk Engineering College</h4>
-                        <h5 class="education-duration">Aug 2018 - Mar 2022</h5>
-
-                        <p class="education-description text-justify"> Playing the game and learning to become a master... </p>
-                        <p class="education-description text-left">CGPA : 8.95 </p>
-                    </div>
-                </div>
-
-                <div id="timeline-divider">
-                    <div class="timeline-traveller">
-                        <div> <i class="fas fa-plane" ></i> </div>
-                    </div>
-                </div>
+          <div class="portfolio-image-container">
+            <img src="image/music-player-image.PNG" />
+            <div class="portfolio-description">
+              <p>
+                An attractive music player that organizes songs in different
+                categories.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="content" id="contact">
+        <h1><i class="fas fa-comments"></i> Contact</h1>
+        <div id="contact-container">
+          <div id="contact-form-container">
+            <form id="contact-form">
+              <input
+                id="input-name"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                id="input-email"
+                name="input-email"
+                type="text"
+                required
+                placeholder="Your Email"
+              />
+              <textarea
+                id="input-message"
+                name="input-message"
+                rows="2"
+                cols="40"
+                placeholder="Message"
+              ></textarea>
+              <button class="sub-btn" type="submit">SEND MESSAGE</button>
+            </form>
+          </div>
+          <div id="my-details-container" style="text-align: left">
+            <h3>Get In touch</h3>
+            <p>I'm glad to help you. You can contact me at any time</p>
 
-        </section>
-        <section class="content" id="shield-bg">
-
-        </section>
-        <section class="content" id="portfolio">
-            <h1> <i class="fab fa-studiovinari"></i> Portfolio</h1>
-            <div class="portfolio-container">
-                <div class="portfolio-image-container">
-                    <img src="image/calc-image.PNG">
-                    <div class="portfolio-description">
-                        <p>An interactive calculator with adjustable themes.</p>
-                    </div>
-                </div>
-            
-                <div class="portfolio-image-container">
-                    <img src="image/flames-image.PNG">
-                    <div class="portfolio-description">
-                       <p> Web page that finds the flames relationship for you and your partner.</p>
-                    </div>
-                </div>
-            
-                <div class="portfolio-image-container">
-                    <img src="image/music-player-image.PNG">
-                    <div class="portfolio-description">
-                       <p> An attractive music player that organizes songs in different categories.</p>
-                    </div>
-                </div>
+            <h3>My Address</h3>
+            <div class="my-details-info-container">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Madurai, Tamil Nadu</span>
             </div>
-        </section>
-        <section class="content" id="contact">
-            <h1> <i class="fas fa-comments"></i> Contact</h1>
-            <div id="contact-container">
-
-                <div id="contact-form-container">
-                    <form id="contact-form">
-                        <input id="input-name" name="name" type="text" placeholder="Your Name">
-                        <input id="input-email" name="input-email" type="text"  required placeholder="Your Email">
-                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
-                    </form>
-                </div>
-                <div id="my-details-container" style="text-align: left;">
-
-                    <h3> Get In touch </h3>
-                    <p>I'm glad to help you. You can contact me at any time </p>
-
-                    <h3> My Address </h3>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Madurai, Tamil Nadu</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>9626244242</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="far fa-envelope"></i>
-                        <span>sanjeevkumarjv@gmail.com</span>
-                    </div>
-                </div>
-                
+            <div class="my-details-info-container">
+              <i class="fas fa-mobile-alt"></i>
+              <span>9626244242</span>
             </div>
-            <div id="icons">
-                <a href="https://in.linkedin.com/in/sanjeev-kumar-fullstack-developer?trk=profile-badge-cta">
-                <i class="fab fa-linkedin-in"></i></a>
-                <a href="">
-                <i class="fab fa-google-plus-g"></i></a>
-                <a href="">
-                <i class="fab fa-facebook-f"></i></a>
-                </div>
-        
-        </section>
-        
+            <div class="my-details-info-container">
+              <i class="far fa-envelope"></i>
+              <span>sanjeevkumarjv@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div id="icons">
+          <a
+            href="https://in.linkedin.com/in/sanjeev-kumar-fullstack-developer?trk=profile-badge-cta"
+          >
+            <i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href=""> <i class="fab fa-google-plus-g"></i></a>
+          <a href=""> <i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="box wow revealOnScroll" data-animation="fadeInUp"><div class="inner">Some Text</div>
+</div>
+<div class="box wow  revealOnScroll"  data-animation="fadeInUp"><div class="inner">Some Text</div>
+      </section>
+      <div class="custom-cursor"></div>
     </main>
 
-   <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+       
+         (function () {
+          // WOW active
+          new WOW().init();
+        })();
+    </script>
 
     <script>
-        $('.outer-wrapper').on('wheel',function(ev){
+      $(".outer-wrapper").on("wheel", function (ev) {
         let y = parseInt(ev.originalEvent.deltaY);
-        if (y)
-            this.scrollLeft += y;
-            // console.log(y,this.scrollLeft);
+        if (y) this.scrollLeft += y;
+       
+        // console.log(y,this.scrollLeft);
+      });
+
+      //   document.body.onmousemove = function (e) {
+      //     document.documentElement.style.setProperty(
+      //       "--x",
+      //       e.clientX + window.scrollX + "px"
+      //     );
+      //     document.documentElement.style.setProperty(
+      //       "--y",
+      //       e.clientY + window.scrollY + "px"
+      //     );
+      //   };
+      // var body = document.body;
+      // var html = document.documentElement;
+      // var a = 0;
+
+      // var indicator = document.getElementById("indicator");
+      // window.addEventListener("wheel",checkScroll);
+
+      // function checkScroll() {
+      //     let coordinate = screen.availWidth;
+
+      //     var scrolled = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth);
+
+      //     // indicator.style.width = scrolled/(height-h) * 100 + "%";
+
+      //     // console.log(scrolled);
+      // }
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var cursor = document.querySelector(".custom-cursor");
+        var links = document.querySelectorAll(".hoverable");
+        var initCursor = false;
+
+        for (var i = 0; i < links.length; i++) {
+          var selfLink = links[i];
+
+          selfLink.addEventListener("mouseover", function () {
+            cursor.classList.add("custom-cursor--link");
+          });
+          selfLink.addEventListener("mouseout", function () {
+            cursor.classList.remove("custom-cursor--link");
+          });
+        }
+
+        window.onmousemove = function (e) {
+          var mouseX = e.clientX;
+          var mouseY = e.clientY;
+
+          if (!initCursor) {
+            // cursor.style.opacity = 1;
+            TweenLite.to(cursor, 0.3, {
+              opacity: 1,
+            });
+            initCursor = true;
+          }
+
+          TweenLite.to(cursor, 0, {
+            top: mouseY + "px",
+            left: mouseX + "px",
+          });
+        };
+
+        window.onmouseout = function (e) {
+          TweenLite.to(cursor, 0.3, {
+            opacity: 0,
+          });
+          initCursor = false;
+        };
+      });
+
+      var $window = $(window),
+        win_width_padded = $window.width() * 1.1,
+        isTouch = Modernizr.touch;
+      if (isTouch) {
+        $(".revealOnScroll").addClass("animated");
+      }
+      $window.on("scroll", revealOnScroll);
+      function revealOnScroll() {
+        var scrolled = $window.scrollLeft(),
+          win_width_padded = $window.width() * 1.1;
+        $(".revealOnScroll:not(.animated)").each(function () {
+          var $this = $(this),
+            offsetLeft = $this.offset().left;
+          if (scrolled + win_width_padded > offsetLeft) {
+            if ($this.data("timeout")) {
+              window.setTimeout(function () {
+                $this.addClass("animated " + $this.data("animation"));
+              }, parseInt($this.data("timeout"), 10));
+            } else {
+              $this.addClass("animated " + $this.data("animation"));
+            }
+          }
         });
-        
-        // var body = document.body;
-        // var html = document.documentElement;
-        // var a = 0;
+        $(".revealOnScroll.animated").each(function (index) {
+          var $this = $(this),
+            offsetLeft = $this.offset().left;
+          if (scrolled + win_width_padded < offsetLeft) {
+            $(this).removeClass("animated fadeInUp flipInX lightSpeedIn");
+          }
+        });
+      }
 
-        // var indicator = document.getElementById("indicator");
-        // window.addEventListener("wheel",checkScroll);
-
-        // function checkScroll() {
-        //     let coordinate = screen.availWidth;
-
-        //     var scrolled = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth);
-
-        //     // indicator.style.width = scrolled/(height-h) * 100 + "%";
-
-        //     // console.log(scrolled);
-        // }
-
+      revealOnScroll();
     </script>
-    
- 
+
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-</body>
+  </body>
 </html>
