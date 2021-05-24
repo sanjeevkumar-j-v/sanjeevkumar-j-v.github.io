@@ -11,7 +11,6 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/animate.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
@@ -24,10 +23,6 @@
       <div id="invertedcursor"></div>
       <section class="navbar-container">
         <nav id="nav-bar">
-          <!-- <div class="tooltip">Hover
-                    <span class="tooltiptext">Tooltip </span>
-                </div> -->
-          <!-- <a class="tooltip " href=""><i class="fas fa-home gradient-text"></i><span class="tooltiptext">Home </span></a> -->
           <a class="tooltip hoverable" href="#about"
             ><i class="fas fa-address-card gradient-text"></i
             ><span class="tooltiptext">About </span></a
@@ -40,6 +35,10 @@
             ><i class="fas fa-book-open gradient-text"></i
             ><span class="tooltiptext">Education </span></a
           >
+          <a class="tooltip hoverable" href="#certificates"
+            ><i class="fas fa-book-open gradient-text"></i
+            ><span class="tooltiptext">Certificates </span></a
+          >
           <a class="tooltip hoverable" href="#portfolio"
             ><i class="fab fa-studiovinari gradient-text"></i
             ><span class="tooltiptext">Portfolio </span></a
@@ -50,41 +49,24 @@
           >
         </nav>
       </section>
-      <!-- <section class="content">
-            
-        </section> -->
-
       <section class="content" id="about">
-        <div id="about-box" class="wow fadeInUp revealOnScroll" data-wow-delay=".5s">
-            
-          <div>
-            <!-- <img width="100px" id="mypic" src="image/sk.jpg"> -->
-          </div>
-          <!-- <h1> <i class="fas fa-address-card"></i> About Me</h1>
-                <p>Sanjeev kumar J V is a computer science <b>engineering student</b>. <br>
-                    He is a self-motivated and enthusiastic person. <br>
-                    He is skilled in <b>coding </b> and <b>web-devlopment</b>.
-                    He has participated and won various hackathons and coding competitions including Smart India Hackathon 2020 - Internal level. 
-                    He is an office-bearer of the Club Innovative and a member of the Maths Club.
-                    He is able to prioritize and execute tasks in a high-pressure environment with ongoing drive for continuous improvement in all aspects of work.
-                    He has <b>excellent communication skills</b> and the ability to succinctly present ideas.
-                    And also he is able to work well in an integrated collaborative <b>team environment</b>, including frequent interaction with team members and supervisors.
-                </p> -->
+        <div id="about-box" class="wow fadeInUp" data-wow-delay=".5s" animDone="true">
           <h1>
             Hey, I'm <br />
             <span class="gradient-text">Sanjeev <br />Kumar</span>
             <p>A passionate web developer</p>
             <a class="hoverable"  href="#skills"><button>My Skills</button></a>
-          </h1>
-          <!-- <div class="know-more">Know More</div> -->
-        </div>
+        </h1>
+        <!-- <marquee behavior="scroll" direction="left">Coding | Cooking | Driving | Coding | Cooking | Driving | Coding | Cooking | Driving </marquee> -->
+        
+    </div>
       </section>
       <section class="content" id="skills">
         <div id="skills-container">
           <!-- <h1> <i class="fas fa-laptop-code"></i></i> Skills</h1> -->
-          <div class="skills-content wow bounceInUp revealOnScroll" data-wow-delay=".5s">
-            <h1 class="gradient-text">What am I good at?</h1>
-            <p>
+          <div class="skills-content ">
+            <h1 class="gradient-text wow" data-wow-delay=".2s" animDone="false">What am I good at?</h1>
+            <p class="wow" data-wow-delay=".5s" animDone="false">
               I started to code since I was 16. <br />
               As usual, it was very hard for this little kid. <br />
               When I executed my very first "Hello World" program in c, <br />
@@ -99,70 +81,70 @@
               <li>
                 <p>HTML and CSS</p>
                 <div class="indicator">
-                  <div class="level l100"></div>
+                  <div class="level l100"  percent="100" animDone="false"></div>
                 </div>
                 <!-- <span>100%</span> -->
               </li>
               <li>
                 <p>JavaScript</p>
                 <div class="indicator">
-                  <div class="level l95"></div>
+                  <div class="level l95"  percent="95" animDone="false"></div>
                 </div>
                 <!-- <span>95%</span> -->
               </li>
               <li>
                 <p>NodeJS</p>
                 <div class="indicator">
-                  <div class="level l90"></div>
+                  <div class="level l90"  percent="90" animDone="false"></div>
                 </div>
                 <!-- <span>90%</span> -->
               </li>
               <li>
                 <p>React</p>
                 <div class="indicator">
-                  <div class="level l85"></div>
+                  <div class="level l85" percent="85" animDone="false"></div>
                 </div>
                 <!-- <span>85%</span> -->
               </li>
               <li>
                 <p>C / C++</p>
                 <div class="indicator">
-                  <div class="level l90"></div>
+                  <div class="level l90" percent="90" animDone="false"></div>
                 </div>
                 <!-- <span>90%</span> -->
               </li>
               <li>
                 <p>Python</p>
                 <div class="indicator">
-                  <div class="level l85"></div>
+                  <div class="level l85" percent="85" animDone="false"></div>
                 </div>
                 <!-- <span>85%</span> -->
               </li>
               <li>
                 <p>Java</p>
                 <div class="indicator">
-                  <div class="level l70"></div>
+                  <div class="level l70" percent="70" animDone="false"></div>
                 </div>
                 <!-- <span>70%</span> -->
               </li>
               <li>
                 <p>MongoDB</p>
                 <div class="indicator">
-                  <div class="level l80"></div>
+                  <div class="level l80" percent="80" animDone="false"></div>
                 </div>
                 <!-- <span>80%</span> -->
               </li>
               <li>
                 <p>MySQL</p>
                 <div class="indicator">
-                  <div class="level l60"></div>
+                  <div class="level l60" percent="60" animDone="false"></div>
                 </div>
                 <!-- <span>60%</span> -->
               </li>
               <li>
                 <p>FireBase</p>
                 <div class="indicator">
-                  <div class="level l60"></div>
+                  <div class="level l60" percent="60" animDone="false"></div>
                 </div>
                 <!-- <span>60%</span> -->
               </li>
@@ -180,7 +162,7 @@
            
               <ol class="ps-timeline">
                 <li>
-                <div class="education-box img-handler-top hoverable float-shadow">
+                <div class="education-box img-handler-top hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
                   <h2 class="">Grade 10</h2>
                   <p class="full-details">Jul 2015 - Apr 2016</p>
                   <p class="full-details">
@@ -188,17 +170,12 @@
                   </p>
                   <p class="full-details">score : 96.8 %</p>
                   <br>
-                  <!-- <p class="education-description text-justify">
-                    A basement for my career is built here...
-                  </p> -->
-
-                  <!-- <img src="/image/sk.jpg" alt="" /> -->
                 </div>
                 <div class="ps-bot"></div>
                 <span class="ps-sp-top"></span>
               </li>
               <li>
-                <div class="education-box img-handler-bot hoverable float-shadow">
+                <div class="education-box img-handler-bot hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
                   <h2 class="">Grade 12</h2>
                   <p class="education-duration">Jul 2017 - Mar 2018</p>
                   <p class="full-details">
@@ -206,142 +183,82 @@
                   </p>
                   <p class="full-details">score : 91.5 %</p>
                   <br>
-                  <!-- <p class="education-description text-justify">
-                    Completed my schooling and armed to play the game...
-                  </p> -->
-                  <!-- <img src="/image/sk.jpg" alt="" /> -->
                 </div>
-                <!-- <div class="ps-top">
-                </div> -->
                 <span class="ps-sp-bot"></span>
               </li>
               <li>
-                <div class="education-box img-handler-top hoverable float-shadow">
+                <div class="education-box img-handler-top hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
                   <h2 class="">B.E - CSE</h2>
                   <p class="education-duration">Aug 2018 - Mar 2022</p>
                   <p class="full-details">Mepco Schlenk Engineering College</p>
                   <p class="full-details">CGPA : 8.95</p>
                     <br>
-                  <!-- <p class="education-description text-justify">
-                    Playing the game and learning to become a master...
-                  </p> -->
-
-                  <!-- <img src="/image/sk.jpg" alt="" /> -->
                 </div>
                 <div class="ps-bot"></div>
                 <span class="ps-sp-top"></span>
-              </li>
-              <li>
-                <!-- <div class="img-handler-bot">
-                  <img src="/image/sk.jpg" alt="" />
-                </div>
-                <div class="ps-top">
-                  <p>
-                    I started to code since I was 16. <br />
-                    As usual, it was very hard for this little kid. <br />
-                    When I executed my very first "Hello World" program in c,
-                    <br />
-                    I felt so happy. <br />
-                  </p>
-                </div>
-                <span class="ps-sp-bot"></span> -->
               </li>
             </ol>
           </div>
         </section>
       </section>
-      <section class="content" id="shield-bg"></section>
+      <section class="content" id="certificates">
+          <div class="fix-left">
+            <h1 class="gradient-text"> <br>C<br>E<br>R<br>T<br>I<br>F<br>I<br>C<br>A<br>T<br>E<br>S</h1>
+          </div>
+       <div class="awards-container">
+         <div class="card wow" > <div class="award-content"> Mepexpo 19</div></div>
+        <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
+        <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
+        <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
+        <div class="card wow" > <div class="award-content"> SIH 20</div></div>
+       </div>
+      </section>
       <section class="content" id="portfolio">
-        <h1><i class="fab fa-studiovinari"></i> Portfolio</h1>
-        <div class="portfolio-container">
-          <div class="portfolio-image-container">
-            <img src="image/calc-image.PNG" />
-            <div class="portfolio-description">
-              <p>An interactive calculator with adjustable themes.</p>
-            </div>
+        <div class="fix-left">
+            <h1 class="gradient-text"> <br>P<br>O<br>R<br>T<br>F<br>O<br>L<br>I<br>O<br></h1>
           </div>
-
-          <div class="portfolio-image-container">
-            <img src="image/flames-image.PNG" />
-            <div class="portfolio-description">
-              <p>
-                Web page that finds the flames relationship for you and your
-                partner.
-              </p>
-            </div>
-          </div>
-
-          <div class="portfolio-image-container">
-            <img src="image/music-player-image.PNG" />
-            <div class="portfolio-description">
-              <p>
-                An attractive music player that organizes songs in different
-                categories.
-              </p>
-            </div>
-          </div>
-        </div>
+       <div class="awards-container">
+         <div class="card wow" > <div class="award-content"> Mepexpo 19</div></div>
+        <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
+        <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
+        <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
+        <div class="card wow" > <div class="award-content"> SIH 20</div></div>
+       </div>
       </section>
       <section class="content" id="contact">
-        <h1><i class="fas fa-comments"></i> Contact</h1>
-        <div id="contact-container">
-          <div id="contact-form-container">
-            <form id="contact-form">
-              <input
-                id="input-name"
-                name="name"
-                type="text"
-                placeholder="Your Name"
-              />
-              <input
-                id="input-email"
-                name="input-email"
-                type="text"
-                required
-                placeholder="Your Email"
-              />
-              <textarea
-                id="input-message"
-                name="input-message"
-                rows="2"
-                cols="40"
-                placeholder="Message"
-              ></textarea>
-              <button class="sub-btn" type="submit">SEND MESSAGE</button>
-            </form>
-          </div>
-          <div id="my-details-container" style="text-align: left">
-            <h3>Get In touch</h3>
-            <p>I'm glad to help you. You can contact me at any time</p>
+            <div class="background-container">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+  <div class="middle">
+  <h2>Get In Touch</h2>
+  <div class="social-media">
+    <a class="btn linkedin" href="https://www.linkedin.com/in/sanjeev-kumar-fullstack-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzZBmA45TQzedTOBUWXrH1w%3D%3D" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a class="btn github" href="#" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a class="btn instagram" href="https://www.instagram.com/solo_king_sk/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a class="btn whatsapp" href="https://wa.me/qr/XNYYQOIZA2KEA1" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+		<a class="btn facebook" href="https://www.facebook.com/profile.php?id=100011701875992" target="_blank">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a class="btn twitter" href="https://twitter.com/Sanjeev28042001" target="_blank">
+			<i class="fab fa-twitter"></i>
+		</a>
+  </div>
+  <p><a class="hoverable" href="tel:+919626244242">9626244242</a> | <a class="hoverable" href="mailto:sanjeevkumarjv@gmail.com">sanjeevkumarjv@gmail.com</a> </p>
 
-            <h3>My Address</h3>
-            <div class="my-details-info-container">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Madurai, Tamil Nadu</span>
-            </div>
-            <div class="my-details-info-container">
-              <i class="fas fa-mobile-alt"></i>
-              <span>9626244242</span>
-            </div>
-            <div class="my-details-info-container">
-              <i class="far fa-envelope"></i>
-              <span>sanjeevkumarjv@gmail.com</span>
-            </div>
-          </div>
-        </div>
-        <div id="icons">
-          <a
-            href="https://in.linkedin.com/in/sanjeev-kumar-fullstack-developer?trk=profile-badge-cta"
-          >
-            <i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href=""> <i class="fab fa-google-plus-g"></i></a>
-          <a href=""> <i class="fab fa-facebook-f"></i></a>
-        </div>
-        <div class="box wow revealOnScroll" data-animation="fadeInUp"><div class="inner">Some Text</div>
-</div>
-<div class="box wow  revealOnScroll"  data-animation="fadeInUp"><div class="inner">Some Text</div>
+	</div>
+
       </section>
+
       <div class="custom-cursor"></div>
     </main>
 
@@ -365,119 +282,7 @@
         })();
     </script>
 
-    <script>
-      $(".outer-wrapper").on("wheel", function (ev) {
-        let y = parseInt(ev.originalEvent.deltaY);
-        if (y) this.scrollLeft += y;
-       
-        // console.log(y,this.scrollLeft);
-      });
+    <script src="script.js"></script>
 
-      //   document.body.onmousemove = function (e) {
-      //     document.documentElement.style.setProperty(
-      //       "--x",
-      //       e.clientX + window.scrollX + "px"
-      //     );
-      //     document.documentElement.style.setProperty(
-      //       "--y",
-      //       e.clientY + window.scrollY + "px"
-      //     );
-      //   };
-      // var body = document.body;
-      // var html = document.documentElement;
-      // var a = 0;
-
-      // var indicator = document.getElementById("indicator");
-      // window.addEventListener("wheel",checkScroll);
-
-      // function checkScroll() {
-      //     let coordinate = screen.availWidth;
-
-      //     var scrolled = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth);
-
-      //     // indicator.style.width = scrolled/(height-h) * 100 + "%";
-
-      //     // console.log(scrolled);
-      // }
-
-      document.addEventListener("DOMContentLoaded", function (event) {
-        var cursor = document.querySelector(".custom-cursor");
-        var links = document.querySelectorAll(".hoverable");
-        var initCursor = false;
-
-        for (var i = 0; i < links.length; i++) {
-          var selfLink = links[i];
-
-          selfLink.addEventListener("mouseover", function () {
-            cursor.classList.add("custom-cursor--link");
-          });
-          selfLink.addEventListener("mouseout", function () {
-            cursor.classList.remove("custom-cursor--link");
-          });
-        }
-
-        window.onmousemove = function (e) {
-          var mouseX = e.clientX;
-          var mouseY = e.clientY;
-
-          if (!initCursor) {
-            // cursor.style.opacity = 1;
-            TweenLite.to(cursor, 0.3, {
-              opacity: 1,
-            });
-            initCursor = true;
-          }
-
-          TweenLite.to(cursor, 0, {
-            top: mouseY + "px",
-            left: mouseX + "px",
-          });
-        };
-
-        window.onmouseout = function (e) {
-          TweenLite.to(cursor, 0.3, {
-            opacity: 0,
-          });
-          initCursor = false;
-        };
-      });
-
-      var $window = $(window),
-        win_width_padded = $window.width() * 1.1,
-        isTouch = Modernizr.touch;
-      if (isTouch) {
-        $(".revealOnScroll").addClass("animated");
-      }
-      $window.on("scroll", revealOnScroll);
-      function revealOnScroll() {
-        var scrolled = $window.scrollLeft(),
-          win_width_padded = $window.width() * 1.1;
-        $(".revealOnScroll:not(.animated)").each(function () {
-          var $this = $(this),
-            offsetLeft = $this.offset().left;
-          if (scrolled + win_width_padded > offsetLeft) {
-            if ($this.data("timeout")) {
-              window.setTimeout(function () {
-                $this.addClass("animated " + $this.data("animation"));
-              }, parseInt($this.data("timeout"), 10));
-            } else {
-              $this.addClass("animated " + $this.data("animation"));
-            }
-          }
-        });
-        $(".revealOnScroll.animated").each(function (index) {
-          var $this = $(this),
-            offsetLeft = $this.offset().left;
-          if (scrolled + win_width_padded < offsetLeft) {
-            $(this).removeClass("animated fadeInUp flipInX lightSpeedIn");
-          }
-        });
-      }
-
-      revealOnScroll();
-    </script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
   </body>
 </html>
