@@ -63,6 +63,34 @@ $(".outer-wrapper").on("wheel", function (ev) {
 
   // console.log(y,this.scrollLeft);
 });
+var scrolled = 0;
+$("#scroll-down").click(function () {
+  // console.log("Scroll..");
+  scrolled += 200;
+  $(".scrollable").animate(
+    {
+      //animate element that has scroll
+      scrollTop: scrolled, //for scrolling
+    },
+    1000
+  );
+  $("#scroll-up").css("display", "inline");
+});
+$("#scroll-up").click(function () {
+  // console.log("Scroll..");
+  if (scrolled > 0)
+    scrolled -= 200;
+  if (scrolled <= 0)
+    $("#scroll-up").css("display", "none");
+
+  $(".scrollable").animate(
+    {
+      //animate element that has scroll
+      scrollTop: scrolled, //for scrolling
+    },
+    1000
+  );
+});
 
 //   document.body.onmousemove = function (e) {
 //     document.documentElement.style.setProperty(
@@ -166,3 +194,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // }
 
 // revealOnScroll();
+// delay function
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+const slideList = document.querySelectorAll('.slide-item');
+const dotList = document.querySelectorAll('.dot');
+
+// init slider
+let activeKey = 0;
+slideList[activeKey].classList.add('active');
+
+// change slide
+async function onSlideChange(key) {
+  if (key === activeKey) return;
+  slideList[activeKey].classList.add('leave');
+  await delay(400);
+  slideList[activeKey].classList.remove('leave', 'active');
+  activeKey = key;
+  slideList[key].classList.add('active');
+}
+dotList.forEach((dot, key) => {
+  dot.addEventListener('click', () => onSlideChange(key))
+})
+

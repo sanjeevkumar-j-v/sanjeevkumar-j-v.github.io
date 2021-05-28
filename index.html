@@ -16,11 +16,8 @@
   </head>
 
   <body>
-    <div id="indicator"></div>
-
     <main class="outer-wrapper">
-       
-      <div id="invertedcursor"></div>
+      <!-- <div id="invertedcursor"></div> -->
       <section class="navbar-container">
         <nav id="nav-bar">
           <a class="tooltip hoverable" href="#about"
@@ -50,30 +47,53 @@
         </nav>
       </section>
       <section class="content" id="about">
-        <div id="about-box" class="wow fadeInUp" data-wow-delay=".5s" animDone="true">
-          <h1>
-            Hey, I'm <br />
-            <span class="gradient-text">Sanjeev <br />Kumar</span>
-            <p>A passionate web developer</p>
-            <a class="hoverable"  href="#skills"><button>My Skills</button></a>
-        </h1>
-        <!-- <marquee behavior="scroll" direction="left">Coding | Cooking | Driving | Coding | Cooking | Driving | Coding | Cooking | Driving </marquee> -->
-        
-    </div>
+        <div id="about-box" class="wow fadeInUp" data-wow-delay=".1s" animDone="true">
+          <h1 class="wow fadeInUp" data-wow-delay=".5s">
+            Hey, I'm <span class="gradient-text">Sanjeev Kumar</span> <br>
+            <span style="font-size: 70%;">Let's build something amazing together.</span>
+            <p>A Full Stack Developer from Madurai, Tamil Nadu. 
+              I enjoy building everything from small business sites to rich interactive web applications. <br>
+              If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a class="hoverable" href="#contact">here</a>.
+            </p>
+            <a class="hoverable wow fadeInUp" data-wow-delay="1.5s" href="#contact"><button class="btn-border">I need a website</button></a>
+            <a class="hoverable wow fadeInUp" data-wow-delay="1.5s" href="/Sanjeev's Resume.pdf" download><button class="btn-no-border">Download Resume</button></a>
+          </h1>        
+        </div>
+        <div class="bounce gradient-text wow fadeInUp" data-wow-delay="2s" animDone="true">
+          <a class="hoverable" href="#skills"><i class="fa fa-angle-right"></i></a>
+        </div>
       </section>
       <section class="content" id="skills">
         <div id="skills-container">
-          <!-- <h1> <i class="fas fa-laptop-code"></i></i> Skills</h1> -->
           <div class="skills-content ">
             <h1 class="gradient-text wow" data-wow-delay=".2s" animDone="false">What am I good at?</h1>
-            <p class="wow" data-wow-delay=".5s" animDone="false">
-              I started to code since I was 16. <br />
-              As usual, it was very hard for this little kid. <br />
-              When I executed my very first "Hello World" program in c, <br />
-              I felt so happy. <br />
-              Got excited to explore more things in this coding world. <br />
-              <br />
-              Now I'm here!
+            <div class="box">
+            <div class="scroll-btn">
+            <i id="scroll-up" style="display: none;" class="fa fa-arrow-alt-circle-up"></i>
+            </div>
+            <p class="scrollable">
+            I fell in love with coding when I was 16. <br />
+              In school, I learnt basic coding and then I was excited to explore more on Computer Science, So I chose Computer Science Engineering. <br>
+              Apart from studies, I love Cooking and Driving.
+              Also I watch movies and listen to songs in my free time. <br>
+              "Music + Coding + Dark" is the best combo. <br>
+              I challenged myself to become good at something new and I chose chess to strengthen my thinking and I even went on to win a bronze medal in it.<br>
+              After actively participating and winning most of the Innovative Club Events, I was voted to take the role of the Office Bearer of it, in my college. <br>
+              I wanted to develop my soft skills through this opportunity so I led the event management team for many events such as Treasure Hunt, Vogueism, etc. 
+              My tech background also was sharpened through this leadership position as I became the "WebMaster" and "Event Organiser" of this club.
+              Decision making in tough situations, Public Speaking, Teamwork, Leadership skills are some of the skills I strengthened myself in as the club OB.
+            </p>
+              <div class="scroll-btn">
+                <i id="scroll-down" class="fa fa-arrow-alt-circle-down"></i>
+              </div>
+            </div>
+            <p class="marquee">
+              <span>Photoshop</span>
+              <span>Canva</span> 
+              <span>Driving</span> 
+              <span>Cooking</span> 
+              <span>Chess</span> 
+              <span>Photography</span> 
             </p>
           </div>
           <div class="skills-list">
@@ -152,16 +172,16 @@
             <div class="skill-progress"></div>
           </div>
         </div>
+        <div class="bounce gradient-text">
+          <a class="hoverable" href="#academics"><i class="fa fa-angle-right"></i></a>
+        </div>
       </section>
- 
-      <section class="content" id="education">
-
+      <section class="content" id="academics">
         <section class="ps-timeline-sec">
           <h1 class="gradient-text">Academics</h1>
           <div class="container">
-           
-              <ol class="ps-timeline">
-                <li>
+            <ol class="ps-timeline">
+              <li>
                 <div class="education-box img-handler-top hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
                   <h2 class="">Grade 10</h2>
                   <p class="full-details">Jul 2015 - Apr 2016</p>
@@ -200,65 +220,142 @@
             </ol>
           </div>
         </section>
+        <div class="bounce gradient-text">
+          <a class="hoverable" href="#certificates"><i class="fa fa-angle-right"></i></a>
+        </div>
       </section>
       <section class="content" id="certificates">
-          <div class="fix-left">
-            <h1 class="gradient-text"> <br>C<br>E<br>R<br>T<br>I<br>F<br>I<br>C<br>A<br>T<br>E<br>S</h1>
-          </div>
-       <div class="awards-container">
-         <div class="card wow" > <div class="award-content"> Mepexpo 19</div></div>
-        <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
-        <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
-        <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
-        <div class="card wow" > <div class="award-content"> SIH 20</div></div>
-       </div>
+        <div class="fix-left">
+          <h1 class="gradient-text"> <br>C<br>E<br>R<br>T<br>I<br>F<br>I<br>C<br>A<br>T<br>E<br>S</h1>
+        </div>
+        <div class="awards-container">
+          <div class="card wow" > <div class="award-content"> Mepexpo 19</div></div>
+          <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
+          <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
+          <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
+          <div class="card wow" > <div class="award-content"> SIH 20</div></div>
+        </div>
+      <div class="bounce gradient-text">
+        <a class="hoverable" href="#portfolio"><i class="fa fa-angle-right"></i></a>
+      </div>
+      
       </section>
       <section class="content" id="portfolio">
         <div class="fix-left">
-            <h1 class="gradient-text"> <br>P<br>O<br>R<br>T<br>F<br>O<br>L<br>I<br>O<br></h1>
+          <h1 class="gradient-text"> <br>P<br>O<br>R<br>T<br>F<br>O<br>L<br>I<br>O<br></h1>
+        </div>
+       <div class="projects-container">
+        <div class="project-slide wow">
+          <div class="project-img">
+            <img src="/projects/images/innohunt.png" alt="">
+            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
           </div>
-       <div class="awards-container">
-         <div class="card wow" > <div class="award-content"> Mepexpo 19</div></div>
-        <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
-        <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
-        <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
-        <div class="card wow" > <div class="award-content"> SIH 20</div></div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <a href="#">Inno Hunt</a>
+            </h3>
+            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
+            <span class="project-date"><i class="fa fa-clock"></i>August, 2020</span>
+            <a href="#" class="read-more">read more</a>
+          </div>
+        </div>
+        <div class="project-slide wow">
+          <div class="project-img">
+            <img src="/projects/images/innohunt.png" alt="">
+            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <a href="#">Inno Hunt</a>
+            </h3>
+            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
+            <span class="project-date"><i class="fa fa-clock"></i>August, 2020</span>
+            <a href="#" class="read-more">read more</a>
+          </div>
+        </div>
+        <div class="project-slide wow">
+          <div class="project-img">
+            <img src="/projects/images/innohunt.png" alt="">
+            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <a href="#">Inno Hunt</a>
+            </h3>
+            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
+            <span class="project-date"><i class="fa fa-clock"></i>August, 2020</span>
+            <a href="#" class="read-more">read more</a>
+          </div>
+        </div>
+        <div class="project-slide wow">
+          <div class="project-img">
+            <img src="/projects/images/innohunt.png" alt="">
+            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <a href="#">Inno Hunt</a>
+            </h3>
+            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
+            <span class="project-date"><i class="fa fa-clock"></i>August, 2020</span>
+            <a href="#" class="read-more">read more</a>
+          </div>
+        </div>
+        <div class="project-slide wow">
+          <div class="project-img">
+            <img src="/projects/images/innohunt.png" alt="">
+            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">
+              <a href="#">Inno Hunt</a>
+            </h3>
+            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
+            <span class="project-date"><i class="fa fa-clock"></i>August, 2020</span>
+            <a href="#" class="read-more">read more</a>
+          </div>
+        </div>
+         
        </div>
+
+        <div class="bounce gradient-text">
+          <a class="hoverable" href="#contact"><i class="fa fa-angle-right"></i></a>
+        </div>
       </section>
       <section class="content" id="contact">
-            <div class="background-container">
-<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
-<div class="stars"></div>
-<div class="twinkling"></div>
-<div class="clouds"></div>
-  <div class="middle">
-  <h2>Get In Touch</h2>
-  <div class="social-media">
-    <a class="btn linkedin" href="https://www.linkedin.com/in/sanjeev-kumar-fullstack-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzZBmA45TQzedTOBUWXrH1w%3D%3D" target="_blank">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a class="btn github" href="#" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
-  <a class="btn instagram" href="https://www.instagram.com/solo_king_sk/" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a class="btn whatsapp" href="https://wa.me/qr/XNYYQOIZA2KEA1" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-		<a class="btn facebook" href="https://www.facebook.com/profile.php?id=100011701875992" target="_blank">
-			<i class="fab fa-facebook-f"></i>
-		</a>
-		<a class="btn twitter" href="https://twitter.com/Sanjeev28042001" target="_blank">
-			<i class="fab fa-twitter"></i>
-		</a>
-  </div>
-  <p><a class="hoverable" href="tel:+919626244242">9626244242</a> | <a class="hoverable" href="mailto:sanjeevkumarjv@gmail.com">sanjeevkumarjv@gmail.com</a> </p>
-
-	</div>
-
+        <div class="background-container">
+          <img src="image/moon.png" alt="">
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+          <div class="clouds"></div>
+          <div class="middle">
+            <h2>Get In Touch</h2>
+            <div class="social-media">
+              <a class="btn linkedin" href="https://www.linkedin.com/in/sanjeev-kumar-fullstack-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzZBmA45TQzedTOBUWXrH1w%3D%3D" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="btn github" href="https://github.com/sanjeevkumar-j-v" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="btn instagram" href="https://www.instagram.com/solo_king_sk/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="btn whatsapp" href="https://wa.me/qr/XNYYQOIZA2KEA1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <!-- <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100011701875992" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn twitter" href="https://twitter.com/Sanjeev28042001" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a> -->
+            </div>
+            <p><a class="hoverable" href="tel:+919626244242">Phone</a> | <a class="hoverable" href="mailto:sanjeevkumarjv@gmail.com">Mail</a> </p>
+          </div>
+          <div class="go-home gradient-text">
+            <a class="hoverable" href="#about"><i class="fa fa-home"></i></a>
+          </div>
       </section>
-
       <div class="custom-cursor"></div>
     </main>
 
@@ -275,7 +372,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-       
          (function () {
           // WOW active
           new WOW().init();
