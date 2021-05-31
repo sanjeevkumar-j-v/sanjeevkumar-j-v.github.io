@@ -4,10 +4,10 @@
 /* Content fonts */
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Gentium+Basic&display=swap");
-
+/* 
 * {
   transition: all 0.3s ease-in-out;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -130,7 +130,7 @@ section > h1 {
   }
 }
 .go-home {
-  font-size: 55px;
+  font-size: 30px;
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -290,7 +290,7 @@ section > h1 {
 }
 
 #about-box:hover {
-  box-shadow: 10px 10px 15px 5px rgba(1, 1, 1, 100);
+  /* box-shadow: 10px 10px 15px 5px rgba(1, 1, 1, 100); */
   /* transform: rotate(-2deg); */
 }
 #about-box h1 {
@@ -374,7 +374,7 @@ section > h1 {
   align-items: center;
 }
 #skills-container:hover {
-  box-shadow: 10px 10px 15px 5px rgba(1, 1, 1, 100);
+  /* box-shadow: 10px 10px 15px 5px rgba(1, 1, 1, 100); */
   /* transform: rotate(-2deg); */
 }
 .skills-content {
@@ -802,15 +802,14 @@ section > h1 {
   position: absolute;
   margin-top: 35px;
 }
-* {
-  cursor: none;
-}
 body {
   min-height: 100%;
   font-family: "Courier New";
   overflow-x: hidden;
 }
-
+* {
+  cursor: none;
+}
 .custom-cursor {
   position: fixed;
   opacity: 0;
@@ -958,6 +957,7 @@ body {
   align-items: center;
   height: 95%;
   margin-left: 80px;
+  
 }
 /* .projects-container > div {
   height: 100%;
@@ -1003,7 +1003,9 @@ body {
 }
 .project-slide .project-img img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 180px;
+
     transform: scale(1,1);
     transition:transform 0.2s linear;
 }
