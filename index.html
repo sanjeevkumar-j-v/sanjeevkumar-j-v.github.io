@@ -11,12 +11,15 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
     <link rel="stylesheet" href="/animate.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
 
+  <div class="loader" ><img src="/loading-animation.gif"></div>  
+  
   <body>
-    <main class="outer-wrapper">
+    <main class="outer-wrapper body">
       <!-- <div id="invertedcursor"></div> -->
       <section class="navbar-container">
         <nav id="nav-bar">
@@ -28,13 +31,13 @@
             ><i class="fas fa-laptop-code gradient-text"></i
             ><span class="tooltiptext">Skills </span></a
           >
-          <a class="tooltip hoverable" href="#education"
+          <a class="tooltip hoverable" href="#academics"
             ><i class="fas fa-book-open gradient-text"></i
-            ><span class="tooltiptext">Education </span></a
+            ><span class="tooltiptext">Academics </span></a
           >
           <a class="tooltip hoverable" href="#certificates"
-            ><i class="fas fa-book-open gradient-text"></i
-            ><span class="tooltiptext">Certificates </span></a
+            ><i class="fas fa-medal gradient-text"></i
+            ><span class="tooltiptext">Achievements </span></a
           >
           <a class="tooltip hoverable" href="#portfolio"
             ><i class="fab fa-studiovinari gradient-text"></i
@@ -72,20 +75,28 @@
             <i id="scroll-up" style="display: none;" class="fa fa-arrow-alt-circle-up"></i>
             </div>
             <p class="scrollable">
-            I fell in love with coding when I was 16. <br />
+              I fell in love with coding when I was 16. <br />
               In school, I learnt basic coding and then I was excited to explore more on Computer Science, So I chose Computer Science Engineering. <br>
-              Apart from studies, I love Cooking and Driving.
+              <!-- Apart from studies, I love Cooking and Driving.
               Also I watch movies and listen to songs in my free time. <br>
               "Music + Coding + Dark" is the best combo. <br>
               I challenged myself to become good at something new and I chose chess to strengthen my thinking and I even went on to win a bronze medal in it.<br>
               After actively participating and winning most of the Innovative Club Events, I was voted to take the role of the Office Bearer of it, in my college. <br>
               I wanted to develop my soft skills through this opportunity so I led the event management team for many events such as Treasure Hunt, Vogueism, etc. 
               My tech background also was sharpened through this leadership position as I became the "WebMaster" and "Event Organiser" of this club.
-              Decision making in tough situations, Public Speaking, Teamwork, Leadership skills are some of the skills I strengthened myself in as the club OB.
+              Decision making in tough situations, Public Speaking, Teamwork, Leadership skills are some of the skills I strengthened myself in as the club OB. -->
             </p>
-              <div class="scroll-btn">
+            Some of my awesome certificates are, 
+            <ul class="courses-list">
+              <li><a href="#">Data Structures and Algorithms using Python</a> - NPTEL</li>
+              <li><a href="#">Front End Development</a> - Coding Ninjas</li>
+              <li><a href="#">Backend Development</a> - Coding Ninjas</li>
+              <li><a href="#">React</a> - Coding Ninjas</li>
+              <li><a href="#">Oxford Achiever</a> - Oxford University Press</li>
+            </ul>
+              <!-- <div class="scroll-btn">
                 <i id="scroll-down" class="fa fa-arrow-alt-circle-down"></i>
-              </div>
+              </div> -->
             </div>
             <p class="marquee">
               <span>Photoshop</span>
@@ -226,23 +237,116 @@
       </section>
       <section class="content" id="certificates">
         <div class="fix-left">
-          <h1 class="gradient-text"> <br>C<br>E<br>R<br>T<br>I<br>F<br>I<br>C<br>A<br>T<br>E<br>S</h1>
-        </div>
-        <div class="awards-container">
-          <div class="card wow" > 
-            <div class="award-content">
-              Mepexpo 19
+          <h1 class="gradient-text"> <br>A<br>C<br>H<br>I<br>E<br>V<br>E<br>M<br>E<br>N<br>T<br>S</h1>
+        </div>    
+
+        <div class="certificates-container">
+          <div class="carousel" data-flickity='{ "autoPlay": 2000, "wrapAround": true}'>
+          <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/smart-india-hackathon.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>Smart India Hackathon 2020</h2>
+                <p>
+                  SIH is a nationwide hackathon competition. <br>
+                  I have presented the project <span class="gradient-text">Job Recommendation System</span> with my team <a href="#">Code Sparks</a>.
+                  We have been selected in Internal level of among 150+ teams in my college.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card wow" > <div class="award-content"> Fiesta 19</div></div>
-          <div class="card wow" > <div class="award-content"> Legacy 20</div></div>
-          <div class="card wow" > <div class="award-content"> Gyan Mitra 20</div></div>
-          <div class="card wow" > <div class="award-content"> SIH 20</div></div>
+          <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/technoinnovative-winner (2).jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>Technoinnovate 2021</h2>
+                <p>Technoinnovate is a idea presentation contest.</p>
+                <p>
+                  I have presented the idea, <span class="gradient-text">Smart Health Analyser and Risk Predictor</span> with my team mate 
+                  <span><a href="#">Sivaprakash</a></span>
+                  and won the First Prize with cash reward of &#8377;5000 for implementing the project among 50+ participants.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/vit-hackertech.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>VIT Hackertech</h2>
+                <p>HackerTech is a 36-hour Technical Hackathon organized by E-Cell, VIT, Vellore.</p>
+                <p>
+                  I coded for 36 hours continuously with my team <a href="#">Code Sparks</a>. 
+                  Over those 100 teams, our project idea was selected for the final round 
+                  that was an unforgettable experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/npr-yuvasakthi (2).jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>Code Debugger</h2>
+                <p>Yuvasakthi is a National level symposium conducted by NPR college, DIndugal.</p>
+                <p>
+                  The event "Code Debugging" is about fixing the bugs in the given set of code.
+                  I won First Prize with cash reward of &#8377;1000 in this event.
+                </p>
+              </div>
+            </div>
+          </div>     
+          <!-- <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/kit-hackathon-19.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>Fiesta 19</h2>
+                <p>
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                  This is a event. I got first prize
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <div class="carousel-cell">
+            <div class="inner-box">
+              <div class="image">
+                <img src="/image/certificates/gyan-mitra-20 (2).jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <h2>Code Scramble</h2>
+                <p>Gyan Mitra is a National level Techno-Management Symposium conducted by Mepco College, Sivakasi.</p>
+                <p>
+                  The challenge of the event "Code Scramble" is about decrypting the original source code from the given scrambled code snippets.
+                  I won first prize among those 100+ participants.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      <div class="bounce gradient-text">
-        <a class="hoverable" href="#portfolio"><i class="fa fa-angle-right"></i></a>
-      </div>
-      
+        </div>
+        
+        <div class="bounce gradient-text">
+          <a class="hoverable" href="#portfolio"><i class="fa fa-angle-right"></i></a>
+        </div>
       </section>
       <section class="content" id="portfolio">
         <div class="fix-left">
@@ -369,6 +473,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
       integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
@@ -380,9 +485,13 @@
           // WOW active
           new WOW().init();
         })();
+
+        window.onload = function() 
+        {
+            //display loader on page load 
+            $('.loader').fadeOut(1000);
+        }
     </script>
-
     <script src="script.js"></script>
-
   </body>
 </html>
