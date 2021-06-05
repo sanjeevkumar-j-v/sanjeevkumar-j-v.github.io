@@ -1,132 +1,246 @@
 <!DOCTYPE html>
+<!-- Made By Sanjeev Kumar -->
 <html lang="en">
   <head>
+    <!-- meta informations -->
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A portfolio website of Sanjeev Kumar, Full Stack Developer from Tamil Nadu, India."
+    />
+    <meta
+      name="keywords"
+      content="sanjeev, sanjeev kumar, Sanjeev Kumar J V, sanjeevkumarjv, sanjeevkumar-j-v, solo_king_sk, sk, full stack developer, web developer, portfolio, mepco, CSE "
+    />
+    <link
+      rel="mask-icon"
+      href="/image/sanjeev-favico.png"
+      color="#ffac41"
+      sizes="any"
+    />
+    <meta name="theme-color" content="#ffac41" />
+    <link rel="icon" href="/image/sanjeev-favico.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sk Portfolio</title>
-
+    <!-- Font Awesome stylesheet CDN - For icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <!-- Flickty stylesheet CDN - For Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://npmcdn.com/flickity@2/dist/flickity.css"
+    />
+    <!-- Animate.css stylesheet for WOW Animations -->
     <link rel="stylesheet" href="/animate.css" />
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
 
-  <div class="loader" ><img src="/loading-animation.gif"></div>  
-  
+  <!-- website preloader -->
+  <div class="loader"><img src="/loading-animation.gif" /></div>
+
   <body>
+    <!-- website content -->
     <main class="outer-wrapper body">
-      <!-- <div id="invertedcursor"></div> -->
+      <!-- Navigation bar -->
       <section class="navbar-container">
         <nav id="nav-bar">
-          <a class="tooltip hoverable" href="#about"
-            ><i class="fas fa-address-card gradient-text"></i
-            ><span class="tooltiptext">About </span></a
-          >
-          <a class="tooltip hoverable" href="#skills"
-            ><i class="fas fa-laptop-code gradient-text"></i
-            ><span class="tooltiptext">Skills </span></a
-          >
-          <a class="tooltip hoverable" href="#academics"
-            ><i class="fas fa-book-open gradient-text"></i
-            ><span class="tooltiptext">Academics </span></a
-          >
-          <a class="tooltip hoverable" href="#certificates"
-            ><i class="fas fa-medal gradient-text"></i
-            ><span class="tooltiptext">Achievements </span></a
-          >
-          <a class="tooltip hoverable" href="#portfolio"
-            ><i class="fab fa-studiovinari gradient-text"></i
-            ><span class="tooltiptext">Portfolio </span></a
-          >
-          <a class="tooltip hoverable" href="#contact"
-            ><i class="fas fa-comments gradient-text"></i
-            ><span class="tooltiptext">Contact </span></a
-          >
+          <a class="tooltip hoverable" href="#about">
+            <i class="fas fa-address-card gradient-text"></i>
+            <span class="tooltiptext">About </span>
+          </a>
+          <a class="tooltip hoverable" href="#skills">
+            <i class="fas fa-laptop-code gradient-text"> </i>
+            <span class="tooltiptext">Skills </span>
+          </a>
+          <a class="tooltip hoverable" href="#academics">
+            <i class="fas fa-book-open gradient-text"> </i>
+            <span class="tooltiptext">Academics </span>
+          </a>
+          <a class="tooltip hoverable" href="#achievements">
+            <i class="fas fa-medal gradient-text"> </i>
+            <span class="tooltiptext">Achievements </span>
+          </a>
+          <a class="tooltip hoverable" href="#portfolio">
+            <i class="fab fa-studiovinari gradient-text"> </i>
+            <span class="tooltiptext">Portfolio </span>
+          </a>
+          <a class="tooltip hoverable" href="#contact">
+            <i class="fas fa-comments gradient-text"> </i>
+            <span class="tooltiptext">Contact </span>
+          </a>
         </nav>
       </section>
+      <!-- About section for describing myself -->
       <section class="content" id="about">
-        <div id="about-box" class="wow fadeInUp" data-wow-delay=".1s" animDone="true">
+        <div
+          id="about-box"
+          class="wow fadeInUp"
+          data-wow-delay=".1s"
+          animDone="true"
+        >
           <h1 class="wow fadeInUp" data-wow-delay=".5s">
-            Hey, I'm <span class="gradient-text">Sanjeev Kumar</span> <br>
-            <span style="font-size: 70%;">Let's build something amazing together.</span>
-            <p>A Full Stack Developer from Madurai, Tamil Nadu. 
-              I enjoy building everything from small business sites to rich interactive web applications. <br>
-              If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a class="hoverable" href="#contact">here</a>.
+            Hey, I'm
+            <span class="gradient-text">Sanjeev Kumar</span> <br />
+            <span style="font-size: 70%">
+              Let's build something amazing together.
+            </span>
+            <p>
+              A Full Stack Developer from Madurai, Tamil Nadu. I enjoy building
+              everything from small business sites to rich interactive web
+              applications. <br />
+              If you are a business seeking a web presence or an employer
+              looking to hire, you can get in touch with me
+              <a class="hoverable" href="#contact">here</a>.
             </p>
-            <a class="hoverable wow fadeInUp" data-wow-delay="1.5s" href="#contact"><button class="btn-border">I need a website</button></a>
-            <a class="hoverable wow fadeInUp" data-wow-delay="1.5s" href="/Sanjeev's Resume.pdf" download><button class="btn-no-border">Download Resume</button></a>
-          </h1>        
+            <a
+              class="hoverable wow fadeInUp"
+              data-wow-delay="1.5s"
+              href="#contact"
+            >
+              <button class="btn-border">I need a website</button>
+            </a>
+            <a
+              class="hoverable wow fadeInUp"
+              data-wow-delay="1.5s"
+              href="/Sanjeev's Resume.pdf"
+              download
+            >
+              <button class="btn-no-border">Download Resume</button>
+            </a>
+          </h1>
         </div>
-        <div class="bounce gradient-text wow fadeInUp" data-wow-delay="2s" animDone="true">
-          <a class="hoverable" href="#skills"><i class="fa fa-angle-right"></i></a>
+        <div
+          class="bounce gradient-text wow fadeInUp"
+          data-wow-delay="2s"
+          animDone="true"
+        >
+          <a class="hoverable" href="#skills">
+            <i class="fa fa-angle-right"> </i>
+          </a>
         </div>
       </section>
+      <!-- Skills section for displaying my skills -->
       <section class="content" id="skills">
         <div id="skills-container">
-          <div class="skills-content ">
-            <h1 class="gradient-text wow" data-wow-delay=".2s" animDone="false">What am I good at?</h1>
+          <div class="skills-content">
+            <h1 class="gradient-text wow" data-wow-delay=".2s" animDone="false">
+              What am I good at?
+            </h1>
             <div class="box">
-            <div class="scroll-btn">
-            <i id="scroll-up" style="display: none;" class="fa fa-arrow-alt-circle-up"></i>
+              <div class="scroll-btn">
+                <i
+                  id="scroll-up"
+                  style="display: none"
+                  class="fa fa-arrow-alt-circle-up"
+                ></i>
+              </div>
+              <p class="scrollable">
+                I fell in love with coding when I was 16. <br />
+                In school, I learnt basic coding and then I was excited to
+                explore more on Computer Science, So I chose Computer Science
+                Engineering. <br />
+                <!-- Apart from studies, I love Cooking and Driving.
+                Also I watch movies and listen to songs in my free time. <br>
+                "Music + Coding + Dark" is the best combo. <br>
+                I challenged myself to become good at something new and I chose chess to strengthen my thinking and I even went on to win a bronze medal in it.<br>
+                After actively participating and winning most of the Innovative Club Events, I was voted to take the role of the Office Bearer of it, in my college. <br>
+                I wanted to develop my soft skills through this opportunity so I led the event management team for many events such as Treasure Hunt, Vogueism, etc. 
+                My tech background also was sharpened through this leadership position as I became the "WebMaster" and "Event Organiser" of this club.
+                Decision making in tough situations, Public Speaking, Teamwork, Leadership skills are some of the skills I strengthened myself in as the club OB. -->
+              </p>
+              Some of my awesome certificates are,
+              <ul class="courses-list">
+                <!-- courses list -->
+                <li>
+                  <a
+                    href="image/certificates/courses/backend.png"
+                    target="_blank"
+                    title="view certificate"
+                  >
+                    Data Structures and Algorithms using Python
+                  </a>
+                  - NPTEL
+                </li>
+                <li>
+                  <a
+                    href="image/certificates/courses/backend.png"
+                    target="_blank"
+                    title="view certificate"
+                  >
+                    Front End Development
+                  </a>
+                  - Coding Ninjas
+                </li>
+                <li>
+                  <a
+                    href="image/certificates/courses/backend.png"
+                    target="_blank"
+                    title="view certificate"
+                  >
+                    Backend Development
+                  </a>
+                  - Coding Ninjas
+                </li>
+                <li>
+                  <a
+                    href="image/certificates/courses/backend.png"
+                    target="_blank"
+                    title="view certificate"
+                  >
+                    React
+                  </a>
+                  - Coding Ninjas
+                </li>
+                <li>
+                  <a
+                    href="image/certificates/courses/backend.png"
+                    target="_blank"
+                    title="view certificate"
+                  >
+                    Oxford Achiever
+                  </a>
+                  - Oxford University Press
+                </li>
+              </ul>
             </div>
-            <p class="scrollable">
-              I fell in love with coding when I was 16. <br />
-              In school, I learnt basic coding and then I was excited to explore more on Computer Science, So I chose Computer Science Engineering. <br>
-              <!-- Apart from studies, I love Cooking and Driving.
-              Also I watch movies and listen to songs in my free time. <br>
-              "Music + Coding + Dark" is the best combo. <br>
-              I challenged myself to become good at something new and I chose chess to strengthen my thinking and I even went on to win a bronze medal in it.<br>
-              After actively participating and winning most of the Innovative Club Events, I was voted to take the role of the Office Bearer of it, in my college. <br>
-              I wanted to develop my soft skills through this opportunity so I led the event management team for many events such as Treasure Hunt, Vogueism, etc. 
-              My tech background also was sharpened through this leadership position as I became the "WebMaster" and "Event Organiser" of this club.
-              Decision making in tough situations, Public Speaking, Teamwork, Leadership skills are some of the skills I strengthened myself in as the club OB. -->
-            </p>
-            Some of my awesome certificates are, 
-            <ul class="courses-list">
-              <li><a href="#">Data Structures and Algorithms using Python</a> - NPTEL</li>
-              <li><a href="#">Front End Development</a> - Coding Ninjas</li>
-              <li><a href="#">Backend Development</a> - Coding Ninjas</li>
-              <li><a href="#">React</a> - Coding Ninjas</li>
-              <li><a href="#">Oxford Achiever</a> - Oxford University Press</li>
-            </ul>
-              <!-- <div class="scroll-btn">
-                <i id="scroll-down" class="fa fa-arrow-alt-circle-down"></i>
-              </div> -->
-            </div>
+            <!-- marquee text box-->
             <p class="marquee">
               <span>Photoshop</span>
-              <span>Canva</span> 
-              <span>Driving</span> 
-              <span>Cooking</span> 
-              <span>Chess</span> 
-              <span>Photography</span> 
+              <span>Canva</span>
+              <span>Wordpress</span>
+              <span>Figma</span>
+              <span>Photography</span>
+              <span>Mobirise</span>
             </p>
           </div>
           <div class="skills-list">
             <ul>
               <li>
+                <!-- skill name -->
                 <p>HTML and CSS</p>
+                <!-- indicator box -->
                 <div class="indicator">
-                  <div class="level l100"  percent="100" animDone="false"></div>
+                  <!-- level of completion -->
+                  <div class="level l100" percent="100" animDone="false"></div>
                 </div>
                 <!-- <span>100%</span> -->
               </li>
               <li>
                 <p>JavaScript</p>
                 <div class="indicator">
-                  <div class="level l95"  percent="95" animDone="false"></div>
+                  <div class="level l95" percent="95" animDone="false"></div>
                 </div>
                 <!-- <span>95%</span> -->
               </li>
               <li>
                 <p>NodeJS</p>
                 <div class="indicator">
-                  <div class="level l90"  percent="90" animDone="false"></div>
+                  <div class="level l90" percent="90" animDone="false"></div>
                 </div>
                 <!-- <span>90%</span> -->
               </li>
@@ -184,127 +298,198 @@
           </div>
         </div>
         <div class="bounce gradient-text">
-          <a class="hoverable" href="#academics"><i class="fa fa-angle-right"></i></a>
+          <a class="hoverable" href="#academics">
+            <i class="fa fa-angle-right"></i>
+          </a>
         </div>
       </section>
+      <!-- Academics section for displaying my studies -->
       <section class="content" id="academics">
-        <section class="ps-timeline-sec">
+        <section class="timeline-sec">
           <h1 class="gradient-text">Academics</h1>
           <div class="container">
-            <ol class="ps-timeline">
+            <ol class="timeline">
               <li>
-                <div class="education-box img-handler-top hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
+                <div
+                  class="
+                    education-box
+                    img-handler-top
+                    hoverable
+                    float-shadow
+                    wow
+                  "
+                  data-wow-delay=".5s"
+                  animDone="false"
+                >
                   <h2 class="">Grade 10</h2>
                   <p class="full-details">Jul 2015 - Apr 2016</p>
-                  <p class="full-details">
-                    Sri Subramania Bharathi HSC
-                  </p>
+                  <p class="full-details">Sri Subramania Bharathi HSC</p>
                   <p class="full-details">score : 96.8 %</p>
-                  <br>
+                  <br />
                 </div>
-                <div class="ps-bot"></div>
-                <span class="ps-sp-top"></span>
+                <div class="bot"></div>
+                <span class="sp-top"></span>
               </li>
               <li>
-                <div class="education-box img-handler-bot hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
+                <div
+                  class="
+                    education-box
+                    img-handler-bot
+                    hoverable
+                    float-shadow
+                    wow
+                  "
+                  data-wow-delay=".5s"
+                  animDone="false"
+                >
                   <h2 class="">Grade 12</h2>
                   <p class="education-duration">Jul 2017 - Mar 2018</p>
-                  <p class="full-details">
-                    Sri Sundareswara Vidya Sala HSC
-                  </p>
+                  <p class="full-details">Sri Sundareswara Vidya Sala HSC</p>
                   <p class="full-details">score : 91.5 %</p>
-                  <br>
+                  <br />
                 </div>
-                <span class="ps-sp-bot"></span>
+                <span class="sp-bot"></span>
               </li>
               <li>
-                <div class="education-box img-handler-top hoverable float-shadow wow" data-wow-delay=".5s" animDone="false">
+                <div
+                  class="
+                    education-box
+                    img-handler-top
+                    hoverable
+                    float-shadow
+                    wow
+                  "
+                  data-wow-delay=".5s"
+                  animDone="false"
+                >
                   <h2 class="">B.E - CSE</h2>
                   <p class="education-duration">Aug 2018 - Mar 2022</p>
                   <p class="full-details">Mepco Schlenk Engineering College</p>
                   <p class="full-details">CGPA : 8.95</p>
-                    <br>
+                  <br />
                 </div>
-                <div class="ps-bot"></div>
-                <span class="ps-sp-top"></span>
+                <div class="bot"></div>
+                <span class="sp-top"></span>
               </li>
             </ol>
           </div>
         </section>
         <div class="bounce gradient-text">
-          <a class="hoverable" href="#certificates"><i class="fa fa-angle-right"></i></a>
+          <a class="hoverable" href="#certificates"
+            ><i class="fa fa-angle-right"></i
+          ></a>
         </div>
       </section>
-      <section class="content" id="certificates">
+      <!-- Achievements section to show my certificates and prizes -->
+      <section class="content" id="achievements">
         <div class="fix-left">
-          <h1 class="gradient-text"> <br>A<br>C<br>H<br>I<br>E<br>V<br>E<br>M<br>E<br>N<br>T<br>S</h1>
-        </div>    
+          <h1 class="gradient-text">
+            <br />A<br />C<br />H<br />I<br />E<br />V<br />E<br />M<br />E<br />N<br />T<br />S
+          </h1>
+        </div>
 
         <div class="certificates-container">
-          <div class="carousel" data-flickity='{ "autoPlay": 2000, "wrapAround": true}'>
-          <div class="carousel-cell">
-            <div class="inner-box">
-              <div class="image">
-                <img src="/image/certificates/smart-india-hackathon.jpg" alt="" srcset="">
-              </div>
-              <div class="details">
-                <h2>Smart India Hackathon 2020</h2>
-                <p>
-                  SIH is a nationwide hackathon competition. <br>
-                  I have presented the project <span class="gradient-text">Job Recommendation System</span> with my team <a href="#">Code Sparks</a>.
-                  We have been selected in Internal level of among 150+ teams in my college.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="inner-box">
-              <div class="image">
-                <img src="/image/certificates/technoinnovative-winner (2).jpg" alt="" srcset="">
-              </div>
-              <div class="details">
-                <h2>Technoinnovate 2021</h2>
-                <p>Technoinnovate is a idea presentation contest.</p>
-                <p>
-                  I have presented the idea, <span class="gradient-text">Smart Health Analyser and Risk Predictor</span> with my team mate 
-                  <span><a href="#">Sivaprakash</a></span>
-                  and won the First Prize with cash reward of &#8377;5000 for implementing the project among 50+ participants.
-                </p>
+          <div
+            class="carousel"
+            data-flickity='{ "autoPlay": 2000, "wrapAround": true}'
+          >
+            <div class="carousel-cell">
+              <div class="inner-box">
+                <div class="image">
+                  <img
+                    src="/image/certificates/smart-india-hackathon.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="details">
+                  <!-- Event name -->
+                  <h2>Smart India Hackathon 2020</h2>
+                  <!-- Event Description -->
+                  <p>
+                    SIH is a nationwide hackathon competition. <br />
+                    I have presented the project
+                    <span class="gradient-text">Job Recommendation System</span>
+                    with my team <a href="#">Code Sparks</a>. We have been
+                    selected in Internal level of among 150+ teams in my
+                    college.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="inner-box">
-              <div class="image">
-                <img src="/image/certificates/vit-hackertech.jpg" alt="" srcset="">
-              </div>
-              <div class="details">
-                <h2>VIT Hackertech</h2>
-                <p>HackerTech is a 36-hour Technical Hackathon organized by E-Cell, VIT, Vellore.</p>
-                <p>
-                  I coded for 36 hours continuously with my team <a href="#">Code Sparks</a>. 
-                  Over those 100 teams, our project idea was selected for the final round 
-                  that was an unforgettable experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="inner-box">
-              <div class="image">
-                <img src="/image/certificates/npr-yuvasakthi (2).jpg" alt="" srcset="">
-              </div>
-              <div class="details">
-                <h2>Code Debugger</h2>
-                <p>Yuvasakthi is a National level symposium conducted by NPR college, DIndugal.</p>
-                <p>
-                  The event "Code Debugging" is about fixing the bugs in the given set of code.
-                  I won First Prize with cash reward of &#8377;1000 in this event.
-                </p>
+            <div class="carousel-cell">
+              <div class="inner-box">
+                <div class="image">
+                  <img
+                    src="/image/certificates/technoinnovative-winner (2).jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="details">
+                  <h2>Technoinnovate 2021</h2>
+                  <p>Technoinnovate is a idea presentation contest.</p>
+                  <p>
+                    I have presented the idea,
+                    <span class="gradient-text"
+                      >Smart Health Analyser and Risk Predictor</span
+                    >
+                    with my team mate
+                    <span><a href="#">Sivaprakash</a></span>
+                    and won the First Prize with cash reward of &#8377;5000 for
+                    implementing the project among 50+ participants.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>     
-          <!-- <div class="carousel-cell">
+            <div class="carousel-cell">
+              <div class="inner-box">
+                <div class="image">
+                  <img
+                    src="/image/certificates/vit-hackertech.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="details">
+                  <h2>VIT Hackertech</h2>
+                  <p>
+                    HackerTech is a 36-hour Technical Hackathon organized by
+                    E-Cell, VIT, Vellore.
+                  </p>
+                  <p>
+                    I coded for 36 hours continuously with my team
+                    <a href="#">Code Sparks</a>. Over those 100 teams, our
+                    project idea was selected for the final round that was an
+                    unforgettable experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="inner-box">
+                <div class="image">
+                  <img
+                    src="/image/certificates/npr-yuvasakthi (2).jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="details">
+                  <h2>Code Debugger</h2>
+                  <p>
+                    Yuvasakthi is a National level symposium conducted by NPR
+                    college, DIndugal.
+                  </p>
+                  <p>
+                    The event "Code Debugging" is about fixing the bugs in the
+                    given set of code. I won First Prize with cash reward of
+                    &#8377;1000 in this event.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-cell">
             <div class="inner-box">
               <div class="image">
                 <img src="/image/certificates/kit-hackathon-19.jpg" alt="" srcset="">
@@ -326,129 +511,198 @@
               </div>
             </div>
           </div> -->
-          <div class="carousel-cell">
-            <div class="inner-box">
-              <div class="image">
-                <img src="/image/certificates/gyan-mitra-20 (2).jpg" alt="" srcset="">
-              </div>
-              <div class="details">
-                <h2>Code Scramble</h2>
-                <p>Gyan Mitra is a National level Techno-Management Symposium conducted by Mepco College, Sivakasi.</p>
-                <p>
-                  The challenge of the event "Code Scramble" is about decrypting the original source code from the given scrambled code snippets.
-                  I won first prize among those 100+ participants.
-                </p>
+            <div class="carousel-cell">
+              <div class="inner-box">
+                <div class="image">
+                  <img
+                    src="/image/certificates/gyan-mitra-20 (2).jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="details">
+                  <h2>Code Scramble</h2>
+                  <p>
+                    Gyan Mitra is a National level Techno-Management Symposium
+                    conducted by Mepco College, Sivakasi.
+                  </p>
+                  <p>
+                    The challenge of the event "Code Scramble" is about
+                    decrypting the original source code from the given scrambled
+                    code snippets. I won first prize among those 100+
+                    participants.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        
-        <div class="bounce gradient-text">
-          <a class="hoverable" href="#portfolio"><i class="fa fa-angle-right"></i></a>
-        </div>
-      </section>
-      <section class="content" id="portfolio">
-        <div class="fix-left">
-          <h1 class="gradient-text"> <br>P<br>O<br>R<br>T<br>F<br>O<br>L<br>I<br>O<br></h1>
-        </div>
-       <div class="projects-container">
-        <div class="project-slide wow">
-          <div class="project-img">
-            <img src="/projects/images/innohunt.png" alt="Inno Hunt">
-            <a href="/projects/projects.html#InnoHunt" class="over-layer"><i class="fa fa-link"></i></a>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">
-              <a href="/projects/projects.html#InnoHunt">Inno Hunt</a>
-            </h3>
-            <p class="project-description">Website for conducting online Treasure Hunt Event</p>
-            <span class="project-date"><i class="fa fa-clock"></i>Aug, 2020</span>
-            <a href="/projects/projects.html#InnoHunt" class="read-more hoverable">read more</a>
-          </div>
-        </div>
-        <div class="project-slide wow">
-          <div class="project-img">
-            <img src="/projects/images/dailyshop.png" alt="Daily Shop">
-            <a href="projects/projects.html#DailyShop" class="over-layer"><i class="fa fa-link"></i></a>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">
-              <a href="projects/projects.html#DailyShop">Daily Shop</a>
-            </h3>
-            <p class="project-description">An end-to-end E-Commerce website</p>
-            <span class="project-date"><i class="fa fa-clock"></i></span>Feb, 2021</span>
-            <a href="projects/projects.html#DailyShop" class="read-more hoverable">read more</a>
-          </div>
-        </div>
-        <!-- <div class="project-slide wow">
-          <div class="project-img">
-            <img src="/projects/images/academia.png" alt="Academia">
-            <a href="projects/projects.html" class="over-layer"><i class="fa fa-link"></i></a>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">
-              <a href="projects/projects.html">Academia</a>
-            </h3>
-            <p class="project-description">A scalable school website with interactive designs</p>
-            <span class="project-date"><i class="fa fa-clock"></i>May, 2021</span>
-            <a href="projects/projects.html" class="read-more hoverable">read more</a>
-          </div>
-        </div> -->
-        <div class="project-slide wow">
-          <div class="project-img">
-            <img src="/projects/images/alpenliebe.jpg" alt="Alpenliebe">
-            <a href="projects/projects.html#Alpenliebe" class="over-layer"><i class="fa fa-link"></i></a>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">
-              <a href="projects/projects.html#Alpenliebe">Alpenliebe</a>
-            </h3>
-            <p class="project-description">A full fledged social media web application </p>
-            <span class="project-date"><i class="fa fa-clock"></i>Nov, 2020</span>
-            <a href="projects/projects.html#Alpenliebe" class="read-more hoverable">read more</a>
-          </div>
-        </div>
-        <div class="project-slide wow">
-          <div class="project-img">
-            <img src="/projects/images/ipod.png" alt="">
-            <a href="/projects/projects.html#IPod" class="over-layer"><i class="fa fa-link"></i></a>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">
-              <a href="/projects/projects.html#IPod">iPod App</a>
-            </h3>
-            <p class="project-description">A supercool iPod web app using React</p>
-            <span class="project-date"><i class="fa fa-clock"></i>Oct, 2020</span>
-            <a href="/projects/projects.html#IPod" class="read-more hoverable">read more</a>
-          </div>
-        </div>
-         
-       </div>
 
         <div class="bounce gradient-text">
-          <a class="hoverable" href="#contact"><i class="fa fa-angle-right"></i></a>
+          <a class="hoverable" href="#portfolio">
+            <i class="fa fa-angle-right"></i>
+          </a>
         </div>
       </section>
+      <!-- portfolio section to showcase my projects -->
+      <section class="content" id="portfolio">
+        <div class="fix-left">
+          <h1 class="gradient-text">
+            <br />P<br />O<br />R<br />T<br />F<br />O<br />L<br />I<br />O<br />
+          </h1>
+        </div>
+        <div class="projects-container">
+          <div class="project-slide wow">
+            <div class="project-img">
+              <img src="/projects/images/innohunt.png" alt="Inno Hunt" />
+              <a href="/projects/projects.html#InnoHunt" class="over-layer">
+                <i class="fa fa-link"></i>
+              </a>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="/projects/projects.html#InnoHunt">Inno Hunt</a>
+              </h3>
+              <p class="project-description">
+                Website for conducting online Treasure Hunt Event
+              </p>
+              <span class="project-date"
+                ><i class="fa fa-clock"></i>Aug, 2020</span
+              >
+              <a
+                href="/projects/projects.html#InnoHunt"
+                class="read-more hoverable"
+                >read more</a
+              >
+            </div>
+          </div>
+          <div class="project-slide wow">
+            <div class="project-img">
+              <img src="/projects/images/dailyshop.png" alt="Daily Shop" />
+              <a href="projects/projects.html#DailyShop" class="over-layer"
+                ><i class="fa fa-link"></i
+              ></a>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="projects/projects.html#DailyShop">Daily Shop</a>
+              </h3>
+              <p class="project-description">
+                An end-to-end E-Commerce website
+              </p>
+              <span class="project-date"
+                ><i class="fa fa-clock"></i>Feb, 2021</span
+              >
+              <a
+                href="projects/projects.html#DailyShop"
+                class="read-more hoverable"
+                >read more</a
+              >
+            </div>
+          </div>
+          <!-- <div class="project-slide wow">
+            <div class="project-img">
+              <img src="/projects/images/academia.png" alt="Academia" />
+              <a href="projects/projects.html" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="projects/projects.html">Academia</a>
+              </h3>
+              <p class="project-description">A scalable school website with interactive designs</p>
+              <span class="project-date"><i class="fa fa-clock"></i>May, 2021</span>
+              <a href="projects/projects.html" class="read-more hoverable">read more</a>
+            </div>
+          </div> -->
+          <div class="project-slide wow">
+            <div class="project-img">
+              <img src="/projects/images/alpenliebe.jpg" alt="Alpenliebe" />
+              <a href="projects/projects.html#Alpenliebe" class="over-layer"
+                ><i class="fa fa-link"></i
+              ></a>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="projects/projects.html#Alpenliebe">Alpenliebe</a>
+              </h3>
+              <p class="project-description">
+                A full fledged social media web application
+              </p>
+              <span class="project-date"
+                ><i class="fa fa-clock"></i>Nov, 2020</span
+              >
+              <a
+                href="projects/projects.html#Alpenliebe"
+                class="read-more hoverable"
+                >read more</a
+              >
+            </div>
+          </div>
+          <div class="project-slide wow">
+            <div class="project-img">
+              <img src="/projects/images/ipod.png" alt="" />
+              <a href="/projects/projects.html#IPod" class="over-layer"
+                ><i class="fa fa-link"></i
+              ></a>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="/projects/projects.html#IPod">iPod App</a>
+              </h3>
+              <p class="project-description">
+                A supercool iPod web app using React
+              </p>
+              <span class="project-date"
+                ><i class="fa fa-clock"></i>Oct, 2020</span
+              >
+              <a href="/projects/projects.html#IPod" class="read-more hoverable"
+                >read more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bounce gradient-text">
+          <a class="hoverable" href="#contact"
+            ><i class="fa fa-angle-right"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Contact section with my contact details -->
       <section class="content" id="contact">
         <div class="background-container">
-          <img src="image/moon.png" alt="">
+          <img src="image/moon.png" alt="" />
           <div class="stars"></div>
           <div class="twinkling"></div>
           <div class="clouds"></div>
           <div class="middle">
             <h2>Get In Touch</h2>
             <div class="social-media">
-              <a class="btn linkedin" href="https://www.linkedin.com/in/sanjeev-kumar-fullstack-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzZBmA45TQzedTOBUWXrH1w%3D%3D" target="_blank">
-              <i class="fab fa-linkedin"></i>
+              <a
+                class="btn linkedin"
+                href="https://www.linkedin.com/in/sanjeev-kumar-fullstack-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzZBmA45TQzedTOBUWXrH1w%3D%3D"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
               </a>
-              <a class="btn github" href="https://github.com/sanjeevkumar-j-v" target="_blank">
+              <a
+                class="btn github"
+                href="https://github.com/sanjeevkumar-j-v"
+                target="_blank"
+              >
                 <i class="fab fa-github"></i>
               </a>
-              <a class="btn instagram" href="https://www.instagram.com/solo_king_sk/" target="_blank">
+              <a
+                class="btn instagram"
+                href="https://www.instagram.com/solo_king_sk/"
+                target="_blank"
+              >
                 <i class="fab fa-instagram"></i>
               </a>
-              <a class="btn whatsapp" href="https://wa.me/qr/XNYYQOIZA2KEA1" target="_blank">
+              <a
+                class="btn whatsapp"
+                href="https://wa.me/qr/XNYYQOIZA2KEA1"
+                target="_blank"
+              >
                 <i class="fab fa-whatsapp"></i>
               </a>
               <!-- <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100011701875992" target="_blank">
@@ -458,22 +712,32 @@
                 <i class="fab fa-twitter"></i>
               </a> -->
             </div>
-            <p><a class="hoverable" href="tel:+919626244242">Phone</a> | <a class="hoverable" href="mailto:sanjeevkumarjv@gmail.com">Mail</a> </p>
+            <p>
+              <a class="hoverable" href="tel:+919626244242">Phone</a> |
+              <a class="hoverable" href="mailto:sanjeevkumarjv@gmail.com"
+                >Mail</a
+              >
+            </p>
           </div>
           <div class="go-home gradient-text">
             <a class="hoverable" href="#about"><i class="fa fa-home"></i></a>
           </div>
+        </div>
       </section>
+      <!-- Custom cursor -->
       <div class="custom-cursor"></div>
     </main>
 
+    <!-- JQuery CDN -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- Flickity Script file CDN - for Carousel -->
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <!-- WOW animation Script file CDN -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
       integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
@@ -481,17 +745,17 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-         (function () {
-          // WOW active
-          new WOW().init();
-        })();
+      (function () {
+        // WOW active
+        new WOW().init();
+      })();
 
-        window.onload = function() 
-        {
-            //display loader on page load 
-            $('.loader').fadeOut(1000);
-        }
+      window.onload = function () {
+        // display loader on page load and fade out after page is loaded
+        $(".loader").fadeOut(1000);
+      };
     </script>
+    <!-- script file -->
     <script src="script.js"></script>
   </body>
 </html>

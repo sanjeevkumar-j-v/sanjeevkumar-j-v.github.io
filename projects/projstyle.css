@@ -52,9 +52,6 @@ body {
   -webkit-animation: test 60s infinite;
   animation: bgmove 60s infinite;
 }
-#box1 {
-  /* background-size: 25%; */
-}
 @-webkit-keyframes bgmove {
   50% {
     background-position: right top;
@@ -65,25 +62,6 @@ body {
     background-position: right center;
   }
 }
-#box2 {
-  /* background: url(../image/sk6-2.jpg); */
-  /* background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-}
-#box3 {
-  /* background: url(../image/background.jpg); */
-  /* background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-}
-#box4 {
-  /* background: url(../image/shield-bw.jpg); */
-  /* background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-}
-
 #footer {
   padding: 40px;
   text-align: center;
@@ -203,8 +181,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  /* height: 100%; */
-  /* border-radius: 30px; */
   margin: 10px 40px 0 0;
   width: 100%;
 }
@@ -213,7 +189,6 @@ body {
   margin: 5%;
   border-radius: 0 80px 0 80px;
   overflow: hidden;
-  /* width: 100px; */
   height: auto;
   z-index: 5;
 }
@@ -241,37 +216,22 @@ body {
   color: var(--secondary);
   text-transform: uppercase;
   letter-spacing: 20px;
-  font-size: 20px;
-  /* text-align: center; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-.project-content .title h2 {
-  /* height: 20px; */
-  /* padding: 5px 10px; */
-  /* border-radius: 0 20px 0 20px; */
+  font-size: 20px; 
 }
 .project-content .technologies ul {
   font-size: 10px;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 .project-content .technologies li {
-  /* height: 20px; */
   margin: 10px;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.8);
-  /* border: 1px solid var(--secondary); */
   border-radius: 15px;
-  /* box-shadow: 0px 4px 22px -9px var(--color1); */
 }
 .project-content .description {
   font-size: 15px;
-}
-.project-content .features {
 }
 .project-content .features li {
   list-style: circle;
@@ -345,7 +305,6 @@ body {
     align-items: center;
     padding: 0px;
     min-height: 80%;
-    /* border-radius: 30px; */
     margin: 2%;
     width: 100%;
   }
@@ -354,7 +313,6 @@ body {
     margin: 0 -30% -20% 0;
     border-radius: 0 50px 0 50px;
     overflow: hidden;
-    /* width: 100px; */
     z-index: 5;
   }
   .project-container .project-image img {
@@ -380,11 +338,6 @@ body {
     letter-spacing: 15px;
     font-size: 12px;
   }
-  .project-content .title h2 {
-    /* height: 20px; */
-    /* padding: 5px 10px; */
-    /* border-radius: 0 20px 0 20px; */
-  }
   .project-content .technologies ul {
     font-size: 8px;
     display: flex;
@@ -393,7 +346,6 @@ body {
     flex-wrap: wrap;
   }
   .project-content .technologies li {
-    /* height: 20px; */
     margin: 4px;
     padding: 4px 10px;
     border-radius: 15px;
@@ -429,7 +381,7 @@ body {
     margin-bottom: 10px;
   }
 }
-
+/* custom cursor */
 * {
   cursor: none;
 }
@@ -447,7 +399,6 @@ body {
   transform: translate(-50%, -50%) scale(0.3);
   z-index: 1000;
 }
-
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(1);
 }
