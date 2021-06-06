@@ -597,7 +597,8 @@ section > h1 {
     flex-direction: column;
   }
   .skills-list ul li .indicator {
-    width: 80%;
+    width: 70%;
+    height: 10px;
   }
   .skills-list ul li p {
     width: fit-content;
@@ -894,11 +895,11 @@ section > h1 {
 .carousel-cell {
   width: 100%;
   height: 80vh;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
   backdrop-filter: blur(22px);
   border-radius: 30px;
   counter-increment: gallery-cell;
-  transition: background 0.3s ease-in-out;
+  /* transition: background 0.3s ease-in-out; */
 }
 /* cell number */
 .carousel-cell:before {
@@ -919,6 +920,7 @@ section > h1 {
 }
 .flickity-prev-next-button:hover {
   background-color: transparent;
+  cursor: none;
 }
 .flickity-button-icon {
   fill: var(--color2);
@@ -962,9 +964,6 @@ section > h1 {
     width: 90%;
     height: 60%;
   }
-  .certificates-container .inner-box .details h2 {
-    font-size: 25px;
-  }
   .certificates-container .inner-box .details p {
     /* height: 90%; */
     overflow-y: auto;
@@ -974,7 +973,7 @@ section > h1 {
   }
   .certificates-container {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -995,9 +994,9 @@ section > h1 {
     align-items: center;
   }
   .certificates-container .inner-box .image img {
-    width: 80px;
+    width: 100px;
     transition: all 0.3s ease-in-out;
-    transform: rotate(-15deg) scale(1.2);
+    transform: rotate(0) scale(1);
   }
   .certificates-container .inner-box .details {
     width: 90%;
@@ -1008,6 +1007,9 @@ section > h1 {
     white-space: normal;
   }
   .certificates-container .inner-box .details h2 {
+    font-size: 16px;
+  }
+  .certificates-container .inner-box:hover .details h2 {
     font-size: 16px;
   }
   .certificates-container .inner-box .details p {
@@ -1023,13 +1025,13 @@ section > h1 {
     text-decoration: none;
   }
   .carousel-cell {
-    height: 70vh;
+    height: 55vh;
     border-radius: 10px;
   }
   .flickity-prev-next-button {
     /* display: none; */
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -1078,8 +1080,8 @@ section > h1 {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: -12px 15px 8px 15px;
-  margin-left: -10px;
+  /* margin: -12px 15px 8px 15px; */
+  /* margin-left: -10px; */
 }
 .project-slide .project-img img {
   width: 100%;
