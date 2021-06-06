@@ -850,7 +850,7 @@ section > h1 {
   align-items: center;
 }
 .certificates-container .inner-box .image img {
-  width: 280px;
+  width: 250px;
   transition: all 0.3s ease-in-out;
   transform: rotate(-15deg) scale(1.2);
 }
@@ -866,7 +866,7 @@ section > h1 {
   white-space: normal;
 }
 .certificates-container .inner-box .details h2 {
-  font-size: 50px;
+  font-size: 35px;
 }
 .certificates-container .inner-box .details p {
   display: none;
@@ -912,6 +912,9 @@ section > h1 {
 }
 .flickity-button {
   background: transparent;
+}
+.flickity-button:hover {
+  cursor: none;
 }
 /* big previous & next buttons */
 .flickity-prev-next-button {
